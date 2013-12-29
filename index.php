@@ -1,5 +1,5 @@
 <?php 
-	if ( strrpos($_SERVER['SERVER_NAME'], "www.wanderlustmanagement.com") != false) ){
+	if ( strrpos($_SERVER['SERVER_NAME'], "www.wanderlustmanagement.com") != false) {
 		$env = 'PROD';
 	} else {
 		$env = 'DEV';
@@ -28,12 +28,12 @@
 	</head>
 	<body class="noScroll">
 		<!--[if lt IE 7]>
-			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrxade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 
 		<div id="content">
 
-		</div> <!-- #content -->
+		</div>
 
 		<?php if ($env == 'PROD') { ?>
 		<script src="js/wanderlust.min.js"></script>
