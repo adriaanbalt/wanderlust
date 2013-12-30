@@ -9,3 +9,4 @@
 .DS_Store
 error.log
 access.log
+*/.css
