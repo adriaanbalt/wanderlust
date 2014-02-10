@@ -17,7 +17,7 @@ WANDERLUST.Models = (function(WANDERLUST, window, undefined){
 	
 	var config = {
 		initialized: false
-	}, krpano, hlookat, vlookat;
+	},
 
 	/**
 	 * @name WANDERLUST.Models-_initialize

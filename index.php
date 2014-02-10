@@ -18,13 +18,12 @@
 		<meta name="viewport" content="width=640,user-scalable=no">
 
 		<?php if ($env == 'PROD') { ?>
-		<link rel="stylesheet" href="css/wanderlust.min.css">
+		<link rel="stylesheet" href="assets/css/wanderlust.min.css">
 		<?php } else { ?>
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="assets/css/screen.css">
 		<?php } ?>
 
-		<script src="js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="assets/js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body class="noScroll">
 		<!--[if lt IE 7]>
@@ -38,10 +37,10 @@
 					<img src='img/logo-pink.svg'/>
 				</div>
 				<nav>
-					<a href='#talent'>TALENT</a>
-					<a href='#about'>ABOUT</a>
-					<a href='#contact'>JOIN</a>
-					<a href='#guidance'>GUIDANCE</a>
+					<a href='talent'>TALENT</a>
+					<a href='about'>ABOUT</a>
+					<a href='contact'>JOIN</a>
+					<a href='guidance'>GUIDANCE</a>
 				</nav>
 			</div>
 			<section id='intro' class='hidden'>
@@ -50,46 +49,17 @@
 					<img src='img/logo-pink.svg'/>
 				</div>
 			</section>
-			<section id='talent'>
-				<ul>
-					<li>
-						<a href='/talent/#chelsea'>
-							<img src='img/talent/chelsea/0-cover.jpg'/>
-							<h2>CHELSEA</h2>
-						</a>
-					</li>
-					<li>
-						<a href='/talent/#irina'>
-							<img src='img/talent/Irina/0-cover.jpg'/>
-							<h2>IRINA</h2>
-						</a>
-					</li>
-					<li>
-						<a href='/talent/#maria'>
-							<img src='img/talent/MariaHeloise/0-cover.jpg'/>
-							<h2>MARIA</h2>
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section id='about' class='hidden'>
-			</section>
-			<section id='contact' class='hidden'>
-			</section>
-			<section id='guidance' class='hidden'>
-			</section>
 		</div>
 
 		<?php if ($env == 'PROD') { ?>
-		<script src="js/wanderlust.min.js"></script>
+		<script src="assets/js/wanderlust.min.js"></script>
 		<?php } else { ?>	
-		<script src="js/lib/jquery-1.8.3.js"></script>
-		<script src="js/lib/jquery.history.js"></script>
-		<script src="js/lib/requestAnimationFrame.js"></script>
-		<script src="js/lib/underscore.js"></script>
-		<script src="js/lib/jquery.appear.js"></script>
-		<script src="js/lib/waypoints.js"></script>
-		<script src="js/wanderlust.js"></script>
+		<script src="assets/js/lib/jquery-1.8.3.js"></script>
+		<script src="assets/js/lib/jquery.history.js"></script>
+		<script src="assets/js/lib/requestAnimationFrame.js"></script>
+		
+		<script src="assets/js/wanderlust.models.js"></script>
+		<script src="assets/js/wanderlust.js"></script>
 		<?php } ?>
 
 

@@ -1,60 +1,8 @@
-<IfModule mod_setenvif.c>
-  <IfModule mod_headers.c>
-    BrowserMatch MSIE ie
-    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
-  </IfModule>
-</IfModule>
-<FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
-  <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-  </IfModule>
-</FilesMatch>
-AddType video/ogg  ogg ogv
-AddType video/mp4  mp4
-AddType video/webm webm
-AddType image/svg+xml                 svg svgz 
-AddType application/vnd.ms-fontobject eot
-AddType font/ttf                      ttf
-AddType font/otf                      otf
-AddType font/x-woff                   woff
-AddType text/cache-manifest           manifest
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json 
-  <FilesMatch "\.(ttf|otf|eot|svg)$" >
-    SetOutputFilter DEFLATE
-  </FilesMatch>
-</IfModule>
-<IfModule mod_expires.c>
-  Header set cache-control: public
-  ExpiresActive on
-  ExpiresDefault                          "access plus 1 month"
-  ExpiresByType text/cache-manifest       "access plus 0 seconds"
-  ExpiresByType text/html                  "access"
-  ExpiresByType application/rss+xml       "access plus 1 hour"
-  ExpiresByType image/vnd.microsoft.icon  "access plus 1 week" 
-  ExpiresByType image/png                 "access plus 1 month"
-  ExpiresByType image/jpg                 "access plus 1 month"
-  ExpiresByType image/jpeg                "access plus 1 month"
-  ExpiresByType video/ogg                 "access plus 1 month"
-  ExpiresByType audio/ogg                 "access plus 1 month"
-  ExpiresByType video/mp4                 "access plus 1 month"
-  ExpiresByType font/ttf                  "access plus 1 month"
-  ExpiresByType font/woff                 "access plus 1 month"
-  ExpiresByType image/svg+xml             "access plus 1 month"
-  ExpiresByType text/css                  "access plus 1 month"
-  ExpiresByType application/javascript    "access plus 1 month"
-  ExpiresByType text/javascript           "access plus 1 month"
-</IfModule>
-FileETag None
 RewriteEngine On
-#RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#RewriteRule ^(.*)$ http://%1 [R=301,L]
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/
-RewriteRule ^index\.(php|html|htm)$ / [R=301,L]
-RewriteRule ^/(.*)$ /index\.php?section=$1 [L]
-RewriteCond %{REQUEST_URI} \.html$
-RewriteCond %{HTTP_USER_AGENT} rv:1\.(([1-8]|9pre|9a|9b[0-4])\.[0-9.]+).*Gecko
-RewriteRule .* - [T=application/xhtml+xml]
+RewriteRule ^assets/(.*)$ /wanderlust/$1 [R=301,L]
+RewriteRule ^wanderlust/assets/(.*)$ /wanderlust/$1 [R=301,L]
+RewriteRule ^talent$ /wanderlust/talent\.php [L]
+RewriteRule ^talent/(.*)$ /wanderlust/details\.php?model=$1 [L]
 Options -MultiViews 
 Options -Indexes
 ErrorDocument 404 /404.html
