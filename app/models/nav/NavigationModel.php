@@ -22,14 +22,6 @@ class NavigationModel extends Model {
 		return $this->navArr;
 	}
 
-	public function getColor( $id )
-	{
-		$_color = ColorModel::getAll();
-		
-
-		return $_color;
-	}
-
 	/**
 	 * Build the navigation object for use by the templates
 	 *
@@ -58,8 +50,7 @@ class NavigationModel extends Model {
 			$nav_item = new NavItemModel;
 			$nav_item->setID( $n->attributes['id'] );
 			$nav_item->setTitle( $n->attributes['title'] );
-			$nav_item->setUrl( $n->attributes['url'] );
-			$nav_item->setColor( $n->attributes['color_id'] );
+			$nav_item->setSlug( $n->attributes['slug'] );
 
 			$subnav = NavigationModel::find($n->attributes['id'])->subnav;
 

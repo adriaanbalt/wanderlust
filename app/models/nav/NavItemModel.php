@@ -6,20 +6,20 @@ class NavItemModel extends Model {
 
 	protected $color_id;
 
-	protected $url;
+	protected $slug;
 
 	public function NavItemModel () {
 		// here i could get the subnav base don the $id
 	}
 
-	public function setUrl($url)
+	public function setSlug($slug)
 	{
-		$this->url = $url;
+		$this->slug = $slug;
 		return $this;
 	}
-	public function getUrl()
+	public function getSlug()
 	{
-		return $url;
+		return $slug;
 	}
 
 	public function addSubNavItem( $subNavItem )
@@ -48,5 +48,5 @@ class NavItemModel extends Model {
 /*
 	id				primary key		unique identifier ie: 283208234
 	label
-	url
+	slug
 */
