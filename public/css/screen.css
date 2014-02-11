@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,56 +20,56 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 1, ../sass/_reset.scss */
+/* line 1, ../../sass/_reset.scss */
 small {
   font-weight: normal;
   font-size: .75em;
 }
 
-/* line 2, ../sass/_reset.scss */
+/* line 2, ../../sass/_reset.scss */
 sup {
   font-weight: normal;
 }
@@ -102,13 +102,13 @@ sup {
   font-style: normal;
 }
 
-/* line 48, ../sass/_fonts.scss */
+/* line 48, ../../sass/_fonts.scss */
 body {
   color: white;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 53, ../sass/_fonts.scss */
+/* line 53, ../../sass/_fonts.scss */
 h1 {
   font-family: "trajan-pro-3", "Garamond", "Georgia", serif;
   font-weight: normal;
@@ -119,7 +119,7 @@ h1 {
   letter-spacing: 18px;
 }
 
-/* line 63, ../sass/_fonts.scss */
+/* line 63, ../../sass/_fonts.scss */
 h2 {
   font-family: "Garamond", "Georgia", serif;
   font-weight: normal;
@@ -131,7 +131,7 @@ h2 {
   font-style: italic;
 }
 
-/* line 74, ../sass/_fonts.scss */
+/* line 74, ../../sass/_fonts.scss */
 h3 {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -144,7 +144,7 @@ h3 {
   padding-bottom: .5em;
 }
 
-/* line 86, ../sass/_fonts.scss */
+/* line 86, ../../sass/_fonts.scss */
 h4 {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -154,7 +154,7 @@ h4 {
   text-align: center;
 }
 
-/* line 95, ../sass/_fonts.scss */
+/* line 95, ../../sass/_fonts.scss */
 h5 {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -164,7 +164,7 @@ h5 {
   color: white;
 }
 
-/* line 104, ../sass/_fonts.scss */
+/* line 104, ../../sass/_fonts.scss */
 h6 {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -173,12 +173,12 @@ h6 {
   color: white;
   letter-spacing: 5px;
 }
-/* line 111, ../sass/_fonts.scss */
+/* line 111, ../../sass/_fonts.scss */
 h6 span {
   color: white;
 }
 
-/* line 116, ../sass/_fonts.scss */
+/* line 116, ../../sass/_fonts.scss */
 dt {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -187,7 +187,7 @@ dt {
   color: white;
 }
 
-/* line 124, ../sass/_fonts.scss */
+/* line 124, ../../sass/_fonts.scss */
 dd {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
@@ -196,7 +196,7 @@ dd {
   color: white;
 }
 
-/* line 132, ../sass/_fonts.scss */
+/* line 132, ../../sass/_fonts.scss */
 nav a {
   font-size: 24px;
   letter-spacing: 3px;
@@ -207,13 +207,13 @@ nav a {
   letter-spacing: 0.041em;
   text-align: center;
 }
-/* line 141, ../sass/_fonts.scss */
+/* line 141, ../../sass/_fonts.scss */
 nav a:hover {
   color: white;
   background: white;
 }
 
-/* line 147, ../sass/_fonts.scss */
+/* line 147, ../../sass/_fonts.scss */
 p {
   color: white;
   font-family: 'ProximaRegular';
@@ -225,71 +225,71 @@ p {
   padding: 0 1em;
 }
 
-/* line 158, ../sass/_fonts.scss */
+/* line 158, ../../sass/_fonts.scss */
 i {
   font-family: "ProximaRegular";
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 164, ../sass/_fonts.scss */
+/* line 164, ../../sass/_fonts.scss */
 b, strong {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
   color: #1f1f1f;
 }
 
-/* line 170, ../sass/_fonts.scss */
+/* line 170, ../../sass/_fonts.scss */
 a {
   color: white;
   font-weight: normal;
   text-decoration: none;
 }
 
-/* line 3, ../sass/_layout.scss */
+/* line 3, ../../sass/_layout.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 8, ../sass/_layout.scss */
+/* line 8, ../../sass/_layout.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 11, ../sass/_layout.scss */
+/* line 11, ../../sass/_layout.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 15, ../sass/_layout.scss */
+/* line 15, ../../sass/_layout.scss */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 19, ../sass/_layout.scss */
+/* line 19, ../../sass/_layout.scss */
 .shown {
   display: block;
   visibility: visible;
 }
 
-/* line 24, ../sass/_layout.scss */
+/* line 24, ../../sass/_layout.scss */
 .wrapper-large {
   margin: 0 auto;
   width: 100%;
   max-width: 1024;
 }
 
-/* line 30, ../sass/_layout.scss */
+/* line 30, ../../sass/_layout.scss */
 .wrapper-medium {
   margin: 0 auto;
   width: 100%;
   max-width: 1024;
 }
 
-/* line 36, ../sass/_layout.scss */
+/* line 36, ../../sass/_layout.scss */
 .wrapper-small {
   margin: 0 auto;
   width: 100%;
@@ -297,13 +297,13 @@ a {
   padding: 2em 0;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 43, ../../sass/_layout.scss */
 .layer {
   position: absolute;
   zoom: 1;
 }
 
-/* line 48, ../sass/_layout.scss */
+/* line 48, ../../sass/_layout.scss */
 .valign {
   vertical-align: middle;
   display: inline-block;
@@ -311,24 +311,24 @@ a {
   width: 1px;
 }
 
-/* line 54, ../sass/_layout.scss */
+/* line 54, ../../sass/_layout.scss */
 .vcontent {
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 59, ../sass/_layout.scss */
+/* line 59, ../../sass/_layout.scss */
 object {
   display: block;
   margin: 0 auto;
 }
 
-/* line 63, ../sass/_layout.scss */
+/* line 63, ../../sass/_layout.scss */
 .section {
   min-height: 100%;
 }
 
-/* line 66, ../sass/_layout.scss */
+/* line 66, ../../sass/_layout.scss */
 section {
   width: 100%;
   min-height: 100%;
@@ -336,7 +336,7 @@ section {
   margin-top: 3%;
 }
 
-/* line 1, ../sass/_main.scss */
+/* line 1, ../../sass/_main.scss */
 #content {
   background-size: cover;
   background-position: center center;
@@ -346,34 +346,34 @@ section {
   position: absolute;
   width: 100%;
 }
-/* line 2, ../sass/_main.scss */
+/* line 2, ../../sass/_main.scss */
 #content.pink {
   background-image: url(../img/record-pink.jpg);
 }
-/* line 4, ../sass/_main.scss */
+/* line 4, ../../sass/_main.scss */
 #content.pink .logo {
   background-image: url(../img/logo-pink.svg);
 }
-/* line 8, ../sass/_main.scss */
+/* line 8, ../../sass/_main.scss */
 #content.black {
   background-image: url(../img/record-black.jpg);
 }
-/* line 10, ../sass/_main.scss */
+/* line 10, ../../sass/_main.scss */
 #content.black .logo {
   background-image: url(../img/logo-black.svg);
 }
 
-/* line 5, ../sass/_navigation.scss */
+/* line 5, ../../sass/_navigation.scss */
 #navigation.desktop {
   margin: 1% 0;
   text-align: center;
 }
-/* line 8, ../sass/_navigation.scss */
+/* line 8, ../../sass/_navigation.scss */
 #navigation.desktop .logo {
   margin: 0 auto;
 }
 
-/* line 1, ../sass/_logo.scss */
+/* line 1, ../../sass/_logo.scss */
 .logo {
   background-repeat: no-repeat;
   background-position: left top;
@@ -382,11 +382,11 @@ section {
   height: 123px;
 }
 
-/* line 1, ../sass/_intro.scss */
+/* line 1, ../../sass/_intro.scss */
 #intro {
   text-align: center;
 }
-/* line 3, ../sass/_intro.scss */
+/* line 3, ../../sass/_intro.scss */
 #intro h2 span {
   background: #000;
   height: 1px;
@@ -394,21 +394,21 @@ section {
   width: 40%;
 }
 
-/* line 2, ../sass/_talent.scss */
+/* line 2, ../../sass/_talent.scss */
 #talent ul {
   text-align: center;
 }
-/* line 4, ../sass/_talent.scss */
+/* line 4, ../../sass/_talent.scss */
 #talent ul li {
   width: 30%;
   display: inline-block;
   text-align: center;
 }
-/* line 8, ../sass/_talent.scss */
+/* line 8, ../../sass/_talent.scss */
 #talent ul li a {
   display: block;
 }
-/* line 11, ../sass/_talent.scss */
+/* line 11, ../../sass/_talent.scss */
 #talent ul li img {
   max-width: 355px;
   width: 100%;
