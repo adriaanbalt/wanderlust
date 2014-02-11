@@ -2,7 +2,7 @@
 	<ul>
 	@foreach( $navigation as $item )
 		<li>
-			<a href="/{{ $item['url'] }}" class='{{ $item['color_id'] }}'>
+			<a href="/{{ $item['url'] }}" class=''>
 				<div class='item'>{{ $item['title'] }}</div>
 			</a>
 		</li>

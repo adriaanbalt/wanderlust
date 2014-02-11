@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<title>Shopping Cart</title>
+		<title>Wanderlust</title>
 		
 		<meta name="title" content="" />
 		<meta name="description" content="" />
@@ -42,9 +42,6 @@
 					@yield('content')
 				</div>
 			</div>
-			<div id='sidebar'>
-				@include('partials.sidebar')
-			</div>
 		</div>
 		<!-- /#main -->
 
@@ -66,8 +63,6 @@
 		<script type="text/javascript">var root = '{{url("/")}}';</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
-		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
-		<script src="{{ url('js/shoppingcart.bootstrap.js') }}" type="text/javascript"></script>
 
 	</body>
 </html>
