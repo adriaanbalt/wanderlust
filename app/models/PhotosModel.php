@@ -14,11 +14,16 @@ class PhotosModel extends Model {
 		return $this->path;
 	}
 
+	public function getTalent()
+	{
+		return $this->belongsTo('ModelsModel','model_id');
+	}
+
 }
 
 
 /*
 	$table->string('title');
-	$table->string('slug');
+	$table4->string('slug');
 	$table->string('path');
 */

@@ -17,9 +17,9 @@ class TalentController extends BaseController {
 
 	public function index()
 	{
-		$data = ModelsModel::all();
-		foreach ( $data as $item ) {
-			
+		foreach ( PhotosModel::all() as $photo)
+		{
+			debug( $photo->getTalent()->getCover() );
 		}
 		$this->layout->content = View::make('templates.site.talent')->withData($data);
 	}
