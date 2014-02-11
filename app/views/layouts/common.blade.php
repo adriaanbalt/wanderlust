@@ -32,12 +32,8 @@
 	</head>
 	<body>
 		<div id="main" role="main" class='clearfix'>
-			<header>
-				<div class='wrapper'>
-					@include('partials.navigation')
-				</div>
-			</header>
-			<div id='content'>
+			<div id='content' class='pink'>
+				@include('partials.header')
 				<div class='wrapper'>
 					@yield('content')
 				</div>
@@ -61,8 +57,11 @@
 
 		<!-- JAVASCRIPT -->
 		<script type="text/javascript">var root = '{{url("/")}}';</script>
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+
+		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
 
 	</body>
 </html>
