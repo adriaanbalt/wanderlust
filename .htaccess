@@ -1,8 +1,6 @@
 RewriteEngine On
-RewriteRule ^assets/(.*)$ /wanderlust/$1 [R=301,L]
-RewriteRule ^wanderlust/assets/(.*)$ /wanderlust/$1 [R=301,L]
-RewriteRule ^talent$ /wanderlust/talent\.php [L]
-RewriteRule ^talent/(.*)$ /wanderlust/details\.php?model=$1 [L]
+RewriteRule ^talent$ /talent\.php [L]
+RewriteRule ^talent/(.*)$ /details\.php?model=$1 [L]
 Options -MultiViews 
 Options -Indexes
 ErrorDocument 404 /404.html
