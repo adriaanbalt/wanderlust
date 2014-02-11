@@ -1,12 +1,7 @@
 #navigation {
-	&.mobile {
-
-	}
-	&.desktop {
-		margin: 1% 0;
-		text-align: center;
-		.logo {
-			margin: 0 auto;
-		}
+	color: #000;
+	margin: 1%;
+	li {
+		display: inline-block;
 	}
 }
