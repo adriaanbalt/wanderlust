@@ -11,3 +11,5 @@ View::composer('partials.navigation', function($view)
 	$navigation = new NavigationModel;
 	$view->with('navigation', $navigation->getNavigation());
 });
+
+
