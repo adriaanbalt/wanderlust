@@ -15,6 +15,11 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	public function index()
+	{
+		$this->layout->content = View::make('templates.site.home');
+	}
+
 	public function showWelcome()
 	{
 		return View::make('hello');
