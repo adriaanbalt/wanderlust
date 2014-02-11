@@ -10,9 +10,9 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=640,user-scalable=no">
 
-		<link rel="stylesheet" href="assets/css/screen.css">
+		<link rel="stylesheet" href="css/screen.css">
 
-		<script src="assets/js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -21,36 +21,14 @@
 
 		
 		<div id="content" class='pink'>
-			<div id='navigation' class='desktop'>
-				<div class='logo'>
-					<img src='assets/img/logo-pink.svg'/>
-				</div>
-				<nav>
-					<a href='talent'>TALENT</a>
-					<a href='about'>ABOUT</a>
-					<a href='contact'>JOIN</a>
-					<a href='guidance'>GUIDANCE</a>
-				</nav>
-			</div>
-			<section id='intro' class='hidden'>
-				<div class='valign'></div>
-				<div class='vcontent'>
-					<img src='assets/img/logo-pink.svg'/>
-				</div>
-			</section>
-			<section id='details'>
-				<div>
-					<img src='assets/img/talent/chelsea/0-cover.jpg'/>
-					<h2>CHELSEA</h2>
-				</div>
-			</section>
+			
 		</div>
 
-		<script src="assets/js/lib/jquery-1.8.3.js"></script>
-		<script src="assets/js/lib/jquery.history.js"></script>
-		<script src="assets/js/lib/requestAnimationFrame.js"></script>
-		<script src="assets/js/wanderlust.models.js"></script>
-		<script src="assets/js/wanderlust.js"></script>
+		<script src="js/lib/jquery-1.8.3.js"></script>
+		<script src="js/lib/jquery.history.js"></script>
+		<script src="js/lib/requestAnimationFrame.js"></script>
+		<script src="js/wanderlust.models.js"></script>
+		<script src="js/wanderlust.js"></script>
 
 		<script>
 			var _gaq = _gaq || [];

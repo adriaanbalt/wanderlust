@@ -18,12 +18,12 @@
 		<meta name="viewport" content="width=640,user-scalable=no">
 
 		<?php if ($env == 'PROD') { ?>
-		<link rel="stylesheet" href="assets/css/wanderlust.min.css">
+		<link rel="stylesheet" href="css/wanderlust.min.css">
 		<?php } else { ?>
-		<link rel="stylesheet" href="assets/css/screen.css">
+		<link rel="stylesheet" href="css/screen.css">
 		<?php } ?>
 
-		<script src="assets/js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body class="noScroll">
 		<!--[if lt IE 7]>
@@ -52,14 +52,14 @@
 		</div>
 
 		<?php if ($env == 'PROD') { ?>
-		<script src="assets/js/wanderlust.min.js"></script>
+		<script src="js/wanderlust.min.js"></script>
 		<?php } else { ?>	
-		<script src="assets/js/lib/jquery-1.8.3.js"></script>
-		<script src="assets/js/lib/jquery.history.js"></script>
-		<script src="assets/js/lib/requestAnimationFrame.js"></script>
+		<script src="js/lib/jquery-1.8.3.js"></script>
+		<script src="js/lib/jquery.history.js"></script>
+		<script src="js/lib/requestAnimationFrame.js"></script>
 		
-		<script src="assets/js/wanderlust.models.js"></script>
-		<script src="assets/js/wanderlust.js"></script>
+		<script src="js/wanderlust.models.js"></script>
+		<script src="js/wanderlust.js"></script>
 		<?php } ?>
 
 

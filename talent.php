@@ -10,9 +10,9 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=640,user-scalable=no">
 
-		<link rel="stylesheet" href="assets/css/screen.css">
+		<link rel="stylesheet" href="css/screen.css">
 
-		<script src="assets/js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/lib/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -42,19 +42,19 @@
 				<ul>
 					<li>
 						<a href='talent/chelsea'>
-							<img src='assets/img/talent/chelsea/0-cover.jpg'/>
+							<img src='img/talent/chelsea/0-cover.jpg'/>
 							<h2>CHELSEA</h2>
 						</a>
 					</li>
 					<li>
 						<a href='talent/irina'>
-							<img src='/assets/img/talent/Irina/0-cover.jpg'/>
+							<img src='/img/talent/Irina/0-cover.jpg'/>
 							<h2>IRINA</h2>
 						</a>
 					</li>
 					<li>
 						<a href='talent/maria'>
-							<img src='/assets/img/talent/MariaHeloise/0-cover.jpg'/>
+							<img src='/img/talent/MariaHeloise/0-cover.jpg'/>
 							<h2>MARIA</h2>
 						</a>
 					</li>
@@ -62,11 +62,11 @@
 			</section>
 		</div>
 
-		<script src="assets/js/lib/jquery-1.8.3.js"></script>
-		<script src="assets/js/lib/jquery.history.js"></script>
-		<script src="assets/js/lib/requestAnimationFrame.js"></script>
-		<script src="assets/js/wanderlust.models.js"></script>
-		<script src="assets/js/wanderlust.js"></script>
+		<script src="js/lib/jquery-1.8.3.js"></script>
+		<script src="js/lib/jquery.history.js"></script>
+		<script src="js/lib/requestAnimationFrame.js"></script>
+		<script src="js/wanderlust.models.js"></script>
+		<script src="js/wanderlust.js"></script>
 
 		<script>
 			var _gaq = _gaq || [];
