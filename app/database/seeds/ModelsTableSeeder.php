@@ -17,7 +17,8 @@ class ModelsTableSeeder extends Seeder {
 					'hips' => 'hips',
 					'shoes' => 'shoes',
 					'hair' => 'hair',
-					'eyes' => 'eyes'
+					'eyes' => 'eyes',
+					'photocover_id' => 1
 			),
 
 			array(
@@ -29,7 +30,8 @@ class ModelsTableSeeder extends Seeder {
 					'hips' => 'hips',
 					'shoes' => 'shoes',
 					'hair' => 'hair',
-					'eyes' => 'eyes'
+					'eyes' => 'eyes',
+					'photocover_id' => 2
 			),
 
 			array(
@@ -41,7 +43,8 @@ class ModelsTableSeeder extends Seeder {
 					'hips' => 'hips',
 					'shoes' => 'shoes',
 					'hair' => 'hair',
-					'eyes' => 'eyes'
+					'eyes' => 'eyes',
+					'photocover_id' => 3
 			)
 		);
 

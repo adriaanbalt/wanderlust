@@ -1,6 +1,6 @@
 <?php
 
-class ModelsTableSeeder extends Seeder {
+class MusiciansTableSeeder extends Seeder {
 
 	public function run()
 	{

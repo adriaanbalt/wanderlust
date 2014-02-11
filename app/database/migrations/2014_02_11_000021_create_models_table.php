@@ -27,6 +27,13 @@ class CreateModelsTable extends Migration {
             $table->string('shoes');
             $table->string('hair');
             $table->string('eyes');
+
+            $table->integer('photocover_id')->unsigned();
+            $table->foreign('photocover_id')
+                ->references('id')
+                ->on('photos')
+                ->on_delete('restrict')
+                ->on_update('cascade');
             
             $table->timestamps();
         });

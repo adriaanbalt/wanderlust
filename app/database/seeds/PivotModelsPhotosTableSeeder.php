@@ -9,16 +9,16 @@ class PivotModelsPhotosTableSeeder extends Seeder {
 
 		$array = array(
 			array(
-					'model_id' => '1',
-					'photo_id' => '1'
+					'model_id' => 1,
+					'photo_id' => 1
 			),
 			array(
-					'model_id' => '2',
-					'photo_id' => '2'
+					'model_id' => 2,
+					'photo_id' => 2
 			),
 			array(
-					'model_id' => '3',
-					'photo_id' => '3'
+					'model_id' => 3,
+					'photo_id' => 3
 			)
 		);
 
