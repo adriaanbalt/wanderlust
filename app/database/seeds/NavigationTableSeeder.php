@@ -30,7 +30,7 @@ class NavigationTableSeeder extends Seeder {
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('navigation')->insert($array);
 	}
 

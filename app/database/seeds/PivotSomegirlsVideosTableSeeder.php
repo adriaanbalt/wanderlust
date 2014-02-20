@@ -22,7 +22,7 @@ class PivotSomegirlsVideosTableSeeder extends Seeder {
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('somegirls_videos')->insert($array);
 	}
 

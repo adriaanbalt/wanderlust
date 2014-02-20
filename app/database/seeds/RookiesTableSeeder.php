@@ -48,7 +48,7 @@ class RookiesTableSeeder extends Seeder {
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('rookies')->insert($array);
 	}
 

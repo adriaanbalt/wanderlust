@@ -20,7 +20,7 @@ class SubNavigationTableSeeder extends Seeder {
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('subnavigation')->insert($array);
 	}
 

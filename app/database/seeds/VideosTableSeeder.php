@@ -11,21 +11,21 @@ class VideosTableSeeder extends Seeder {
 			array(
 					'title' => 'video 1',
 					'slug' => 'video1',
-					'path' => 'images/models/chelsea/0_cover.jpg'
+					'path' => 'images/models/chelsea/0-cover.jpg'
 			),
 			array(
 					'title' => 'video 2',
 					'slug' => 'video2',
-					'path' => 'images/models/chelsea/0_cover.jpg'
+					'path' => 'images/models/chelsea/0-cover.jpg'
 			),
 			array(
 					'title' => 'video 3',
 					'slug' => 'video3',
-					'path' => 'images/models/chelsea/0_cover.jpg'
+					'path' => 'images/models/chelsea/0-cover.jpg'
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('videos')->insert($array);
 	}
 

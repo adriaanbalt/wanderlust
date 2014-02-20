@@ -16,9 +16,14 @@ class DatabaseSeeder extends Seeder {
 		$this->command->info('Navigation next!');
 		$this->call('NavigationTableSeeder');
 
-		// $this->call('SubNavigationTableSeeder');
-		// $this->command->info('SubNavigation seeded!');
+		$this->command->info('About next!');
+		$this->call('AboutTableSeeder');
 
+		$this->command->info('Join next!');
+		$this->call('JoinTableSeeder');
+
+		$this->command->info('Contact next!');
+		$this->call('ContactTableSeeder');
 
 		$this->command->info('Photos next!');
 		$this->call('PhotosTableSeeder');

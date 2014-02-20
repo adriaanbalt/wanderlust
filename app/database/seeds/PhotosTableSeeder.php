@@ -11,21 +11,21 @@ class PhotosTableSeeder extends Seeder {
 			array(
 					'title' => 'photo 1',
 					'slug' => 'cover',
-					'path' => 'images/models/chelsea/0_cover.jpg'
+					'path' => 'images/models/chelsea/0-cover.jpg'
 			),
 			array(
 					'title' => 'photo 2',
 					'slug' => 'cover',
-					'path' => 'images/models/irina/0_cover.jpg'
+					'path' => 'images/models/irina/0-cover.jpg'
 			),
 			array(
 					'title' => 'photo 3',
 					'slug' => 'cover',
-					'path' => 'images/models/maria/0_cover.jpg'
+					'path' => 'images/models/maria/0-cover.jpg'
 			)
 		);
 
-		// Uncomment the below to run the seeder
+		
 		DB::table('photos')->insert($array);
 	}
 
