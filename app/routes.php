@@ -12,4 +12,4 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/some-girls', 'SomeGirlsController@index');
+Route::get('/some-girls', 'SomegirlsController@index');

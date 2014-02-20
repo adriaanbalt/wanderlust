@@ -1,11 +1,13 @@
 @section('content')
-<h1>TALENT</h1>
-	<u>
-	@foreach( $data as $item )
+<h1>some girls</h1>
+	<ul>
+@foreach( $data as $item )
 		<li>
-			<img src="{{ $item->getCover() }}"/>
-			<a href="some-girls/{{ $item['slug'] }}">{{ $item['name'] }}</a>
+			<a href="some-girls/{{ $item['slug'] }}">
+				<img src="{{ URL::asset( $item->cover->path ) }}"/>
+				<p>{{ $item['name'] }}</p>
+			</a>
 		</li>
-	@endforeach
+@endforeach
 	</ul>
 @stop

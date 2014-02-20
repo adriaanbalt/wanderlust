@@ -1,6 +1,6 @@
 <?php
 
-class SomeGirlsController extends BaseController {
+class SomegirlsController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ class SomeGirlsController extends BaseController {
 	public function index()
 	{
 		
-		$data = ModelsModel::all();
+		$data = SomegirlsModel::all();
 		$this->layout->content = View::make('templates.site.somegirls')->withData($data);
 	}
 
