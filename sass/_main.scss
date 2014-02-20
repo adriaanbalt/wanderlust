@@ -1,15 +1,15 @@
 #content{
 	&.pink {
 		background-image: url(../images/record-pink.jpg);
-		.logo {
-			background-image: url(../images/logo-pink.svg);
-		}
 	}
 	&.black {
 		background-image: url(../images/record-black.jpg);
-		.logo {
-			background-image: url(../images/logo-black.svg);
-		}
+	}
+	&.gray {
+		background-image: url(../images/record-gray.jpg);
+	}
+	&.mauve {
+		background-image: url(../images/record-mauve.jpg);
 	}
 	background-size: cover;
 	background-position: center center;
