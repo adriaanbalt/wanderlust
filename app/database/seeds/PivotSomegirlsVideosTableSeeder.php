@@ -1,29 +1,29 @@
 <?php
 
-class PivotModelsVideosTableSeeder extends Seeder {
+class PivotSomegirlsVideosTableSeeder extends Seeder {
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
-		DB::table('models_videos')->delete();
+		DB::table('somegirls_videos')->delete();
 
 		$array = array(
 			array(
-					'model_id' => '1',
+					'somegirls_id' => '1',
 					'video_id' => '1'
 			),
 			array(
-					'model_id' => '2',
+					'somegirls_id' => '2',
 					'video_id' => '2'
 			),
 			array(
-					'model_id' => '3',
+					'somegirls_id' => '3',
 					'video_id' => '3'
 			)
 		);
 
 		// Uncomment the below to run the seeder
-		DB::table('models_videos')->insert($array);
+		DB::table('somegirls_videos')->insert($array);
 	}
 
 }

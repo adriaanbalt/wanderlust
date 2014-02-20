@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateModelsTable extends Migration {
+class CreateRookiesTable extends Migration {
 
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateModelsTable extends Migration {
      */
     public function up()
     {
-        Schema::create('models', function(Blueprint $table) {
+        Schema::create('rookies', function(Blueprint $table) {
             $table->engine ='InnoDB';
 
             $table->increments('id');
@@ -46,7 +46,7 @@ class CreateModelsTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('models');
+        Schema::drop('rookies');
     }
 
 }
