@@ -4,19 +4,9 @@ class PhotosModel extends Model {
 
 	protected $table = 'photos';
 
-	public function getSlug()
+	public function talent()
 	{
-		return $this->slug;
-	}
-
-	public function getPath()
-	{
-		return $this->path;
-	}
-
-	public function getTalent()
-	{
-		return $this->belongsTo('ModelsModel','model_id');
+		return $this->belongsTo('ModelsModel','model_id','photocover_id');
 	}
 
 }

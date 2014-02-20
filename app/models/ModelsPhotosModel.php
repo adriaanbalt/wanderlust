@@ -4,14 +4,9 @@ class ModelsPhotosModel extends Model {
 
 	protected $table = 'models_photos';
 
-	public function getModelID()
+	public function models()
 	{
-		return $this->model_id;
-	}
-
-	public function getPhotoID()
-	{
-		return $this->photo_id;
+		return $this->belongsTo('ModelsModel','model_id','photocover_id');
 	}
 
 }
@@ -19,6 +14,6 @@ class ModelsPhotosModel extends Model {
 
 /*
 	$table->string('title');
-	$table->string('slug');
+	$table4->string('slug');
 	$table->string('path');
 */

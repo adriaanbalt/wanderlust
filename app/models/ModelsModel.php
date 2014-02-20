@@ -2,8 +2,6 @@
 
 class ModelsModel extends Model {
 
-	protected $table = 'models';
-
 	public function getSlug()
 	{
 		return $this->slug;
@@ -49,9 +47,9 @@ class ModelsModel extends Model {
 		return $this->eyes;
 	}
 
-	public function getCover()
+	public function cover()
 	{
-		return $this->hasOne('PhotosModel', 'coverphoto_id');
+		return $this->hasOne('PhotosModel', 'id');
 	}
 
 }
