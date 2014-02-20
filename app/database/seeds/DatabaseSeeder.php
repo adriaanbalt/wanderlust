@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder {
 
 		$this->command->info('HERE WE GO!');
 
-		// $this->call('NavigationTableSeeder');
-		// $this->command->info('Navigation seeded!');
+		$this->call('NavigationTableSeeder');
+		$this->command->info('Navigation seeded!');
 
 		// $this->call('SubNavigationTableSeeder');
 		// $this->command->info('SubNavigation seeded!');
