@@ -25,6 +25,8 @@
 
 		<link href="{{ url('css/screen.css') }}" rel="stylesheet" />
 		<link href="{{ url('css/selectize.bootstrap3.css') }}" rel="stylesheet">
+
+		<script src="//use.edgefonts.net/abril-fatface:n4,i4.js"></script>
  
 		<!--[if IE]><link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -32,7 +34,7 @@
 	</head>
 	<body>
 		<div id="main" role="main" class='clearfix'>
-			<div id='content' class='pink'>
+			<div id='content' class='mauve'>
 				@include('partials.header')
 				<div class='wrapper'>
 					@yield('content')
