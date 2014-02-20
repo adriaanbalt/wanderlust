@@ -1,6 +1,6 @@
 <?php
 
-class TalentController extends BaseController {
+class SomeGirlsController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,11 +17,9 @@ class TalentController extends BaseController {
 
 	public function index()
 	{
-		foreach ( PhotosModel::all() as $photo)
-		{
-			debug( $photo->getTalent()->getCover() );
-		}
-		$this->layout->content = View::make('templates.site.talent')->withData($data);
+		
+		$data = ModelsModel::all();
+		$this->layout->content = View::make('templates.site.somegirls')->withData($data);
 	}
 
 }
