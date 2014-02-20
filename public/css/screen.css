@@ -76,7 +76,7 @@ sup {
 
 /* line 48, ../../sass/_fonts.scss */
 body {
-  color: white;
+  color: black;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -87,7 +87,7 @@ h1 {
   font-weight: 400;
   font-size: 96px;
   text-align: center;
-  color: white;
+  color: black;
   letter-spacing: 18px;
 }
 
@@ -99,7 +99,7 @@ h2 {
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 38px;
-  color: white;
+  color: black;
   font-style: italic;
 }
 
@@ -108,7 +108,7 @@ h3 {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
   text-align: center;
-  color: white;
+  color: black;
   line-height: 48px;
   font-size: 36px;
   letter-spacing: 3px;
@@ -122,7 +122,7 @@ h4 {
   font-weight: normal;
   font-size: 72px;
   letter-spacing: 12px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -133,7 +133,7 @@ h5 {
   font-size: 30px;
   letter-spacing: 0.041em;
   line-height: 48px;
-  color: white;
+  color: black;
 }
 
 /* line 104, ../../sass/_fonts.scss */
@@ -142,12 +142,12 @@ h6 {
   font-weight: normal;
   text-align: center;
   font-size: 24px;
-  color: white;
+  color: black;
   letter-spacing: 5px;
 }
 /* line 111, ../../sass/_fonts.scss */
 h6 span {
-  color: white;
+  color: black;
 }
 
 /* line 116, ../../sass/_fonts.scss */
@@ -156,7 +156,7 @@ dt {
   font-weight: normal;
   text-align: center;
   font-size: 72px;
-  color: white;
+  color: black;
 }
 
 /* line 124, ../../sass/_fonts.scss */
@@ -165,29 +165,29 @@ dd {
   font-weight: normal;
   text-align: center;
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 /* line 132, ../../sass/_fonts.scss */
 nav a {
   font-size: 24px;
   letter-spacing: 3px;
-  color: white;
-  font-family: 'ProximaRegular';
+  color: black;
+  font-family: abril-fatface, serif;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 34px;
   letter-spacing: 0.041em;
   text-align: center;
 }
 /* line 141, ../../sass/_fonts.scss */
 nav a:hover {
-  color: white;
-  background: white;
+  color: black;
+  background: black;
 }
 
 /* line 147, ../../sass/_fonts.scss */
 p {
-  color: white;
+  color: black;
   font-family: 'ProximaRegular';
   font-weight: normal;
   font-size: 21px;
@@ -213,7 +213,7 @@ b, strong {
 
 /* line 170, ../../sass/_fonts.scss */
 a {
-  color: white;
+  color: black;
   font-weight: normal;
   text-decoration: none;
 }
@@ -322,17 +322,17 @@ section {
 #content.pink {
   background-image: url(../images/record-pink.jpg);
 }
-/* line 4, ../../sass/_main.scss */
-#content.pink .logo {
-  background-image: url(../images/logo-pink.svg);
-}
-/* line 8, ../../sass/_main.scss */
+/* line 5, ../../sass/_main.scss */
 #content.black {
   background-image: url(../images/record-black.jpg);
 }
-/* line 10, ../../sass/_main.scss */
-#content.black .logo {
-  background-image: url(../images/logo-black.svg);
+/* line 8, ../../sass/_main.scss */
+#content.gray {
+  background-image: url(../images/record-gray.jpg);
+}
+/* line 11, ../../sass/_main.scss */
+#content.mauve {
+  background-image: url(../images/record-mauve.jpg);
 }
 
 /* line 1, ../../sass/_navigation.scss */
