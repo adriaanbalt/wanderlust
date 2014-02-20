@@ -3,7 +3,7 @@
 	<ul>
 @foreach( $data as $item )
 		<li>
-			<a href="some-girls/{{ $item['slug'] }}">
+			<a href="rookies/{{ $item['slug'] }}">
 				<img src="{{ URL::asset( $item->cover->path ) }}"/>
 				<p>{{ $item['name'] }}</p>
 			</a>
