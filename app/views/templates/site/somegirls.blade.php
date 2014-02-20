@@ -4,9 +4,8 @@
 	@foreach( $data as $item )
 		<li>
 			<img src="{{ $item->getCover() }}"/>
-			<a href="talent/{{ $item['slug'] }}">{{ $item['name'] }}</a>
+			<a href="some-girls/{{ $item['slug'] }}">{{ $item['name'] }}</a>
 		</li>
 	@endforeach
 	</ul>
-
 @stop
