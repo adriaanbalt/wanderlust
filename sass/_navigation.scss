@@ -1,15 +1,13 @@
 #navigation {
-	color: #000;
 	position: fixed;
 	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
+	z-index: 100;
 	nav {
-		display: none;
+		@include opacity( 0 );
+		width: 100%;
 		height: 100%;
+		position: absolute;
+		top: 0;
 		a {
 			&:hover {
 				background: $nav-hover-bg-color;
@@ -25,21 +23,34 @@
 	}
 	.menu {
 		position: absolute;
-		right: 5em;
-		top: 2em;
+		left: 1em;
+		top: 1em;
+		padding: 1em;
+		z-index: 100;
 		&.white {
 			display: none;
+			background: transparent url(../images/menu-white.svg) 50% 50% no-repeat;
+			width: 50px;
+			height: 30px;
+		}
+		&.black {
+			background: transparent url(../images/menu-black.svg) 50% 50% no-repeat;
+			display: block;
+			width: 50px;
+			height: 30px;
 		}
 	}
 	&.open {
+		width: 100%;
+		min-height: 100%;
 		.menu.black {
-			display: none;
+			@extend .hidden;
 		}
 		.menu.white {
-			display: block;
+			@extend .shown;
 		}
 		nav {
-			display: block;
+			@extend .shown;
 		}
 	}
 }

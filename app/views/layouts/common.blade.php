@@ -35,9 +35,9 @@
 	<body>
 		<div id="main" role="main" class='clearfix'>
 			@include('partials.intro')
+			@include('partials.navigation')
 			<div id='content' class='mauve'>
 				@include('partials.definition')
-				@include('partials.header')
 				<div class='wrapper'>
 					@yield('content')
 				</div>

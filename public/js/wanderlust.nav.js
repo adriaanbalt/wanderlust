@@ -19,10 +19,7 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 		initialized: false,
 		timeout: 5000,
 		skip: true,
-		$nav: null,
-		$navNav: null,
-		$menuBlack: null,
-		$menuWhite: null
+		navActive: false
 	},
 
 	/**
@@ -34,12 +31,13 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 	_initialize = function() {
 		console.log ( 'WANDERLUST.Nav.initialize' );
 
-		config.$nav = $('#navigation');
-		config.$menuBlack = $('#navigation .menu.black');
-		config.$menuWhite = $('#navigation .menu.white');
+		$navigation = $('#navigation');
+		$nav = $('#navigation nav');
+		$menuBlack = $('#navigation .menu.black');
+		$menuWhite = $('#navigation .menu.white');
 
-		config.$menuBlack.on('click', toggleNav );
-		config.$menuWhite.on('click', toggleNav );
+		$menuBlack.on('click', toggleNav );
+		$menuWhite.on('click', toggleNav );
 
 		// subscribe to the resize
 		resize();
@@ -48,14 +46,27 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 	},
 
 	toggleNav = function() {
-		console.log ( 'toggle ', config.$nav.hasClass( 'open') );
-		config.$nav.hasClass( 'open' ) ?  config.$nav.removeClass( 'open' ) : config.$nav.addClass( 'open' );
+		config.navActive = !config.navActive;
+		if ( config.navActive ) {
+			_gaq.push(['_trackEvent', 'Nav opened']);
+			$navigation.addClass( 'open' );
+			$nav.clearQueue().animate({
+				'opacity':1
+			}, 150, function() {
+			});
+
+		} else {
+			$nav.clearQueue().animate({
+				'opacity':0
+			}, 150, function() {
+				$navigation.removeClass( 'open' );
+			});
+		}
 	},
 
 	resize = function() {
-		console.log ( "RESIZE ", WANDERLUST.$window.width() );
-		config.$nav.width( WANDERLUST.$window.width() );
-		config.$nav.height( WANDERLUST.$window.height() );
+		// config.$nav.width( WANDERLUST.$window.width() );
+		// config.$nav.height( WANDERLUST.$window.height() );
 	};
 
 	// public methods for this class
