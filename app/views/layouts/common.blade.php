@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<title>Wanderlust</title>
+		<title>WANDERLUST</title>
 		
 		<meta name="title" content="" />
 		<meta name="description" content="" />
@@ -36,6 +36,7 @@
 		<div id="main" role="main" class='clearfix'>
 			@include('partials.intro')
 			<div id='content' class='mauve'>
+				@include('partials.definition')
 				@include('partials.header')
 				<div class='wrapper'>
 					@yield('content')
@@ -56,6 +57,17 @@
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+		</script>
+
+		<script>
+			if (window.console === undefined) {
+				window.console	= {};
+				console.debug	= function() {};
+				console.error	= function() {};
+				console.info	= function() {};
+				console.log		= function() {};
+				console.warn	= function() {};
+			}
 		</script>
 
 		<!-- JAVASCRIPT -->
