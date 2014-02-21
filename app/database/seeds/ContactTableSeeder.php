@@ -8,10 +8,31 @@ class ContactTableSeeder extends Seeder {
 
 		$array = array(
 			array(
+					'name' => '',
+					'position' => '',
 					'telephone' => '414.702.8225',
 					'fax' => '',
 					'email' => 'info@wanderlustmgmt.com',
-					'address' => '1815 Purdy Ave., Miami Beach 33139'
+					'address' => '1815 Purdy Ave., Miami Beach 33139',
+					'website' => ''
+			),
+			array(
+					'name' => 'Chad Gavery',
+					'position' => 'Director',
+					'telephone' => '414.702.8225',
+					'fax' => '',
+					'email' => 'info@wanderlustmgmt.com',
+					'address' => '1815 Purdy Ave., Miami Beach 33139',
+					'website' => 'www.wanderlustmgmt.com'
+			),
+			array(
+					'name' => 'Guillaume',
+					'position' => 'Director',
+					'telephone' => '414.702.8225',
+					'fax' => '',
+					'email' => 'info@wanderlustmgmt.com',
+					'address' => '1815 Purdy Ave., Miami Beach 33139',
+					'website' => 'www.wanderlustmgmt.com'
 			)
 		);
 
