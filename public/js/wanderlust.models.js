@@ -1,10 +1,10 @@
 /**
- * @fileOverview AKQA WANDERLUST 2013 Models
- * @author <a href="mailto:adriaan.scholvinck@akqa.com">Adriaan Scholvinck</a>
+ * @fileOverview BALT - WANDERLUST 2013 Models
+ * @author <a href="mailto:adriaan@BALT.us">Adriaan Scholvinck</a>
  * @version 1.0
  */
 
-// declare AOY in case it has not been declared yet
+// declare WANDERLUST in case it has not been declared yet
 window.WANDERLUST = window.WANDERLUST || {};
 
 /**
