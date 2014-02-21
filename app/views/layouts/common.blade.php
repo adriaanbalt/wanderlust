@@ -41,6 +41,7 @@
 				<div class='wrapper'>
 					@yield('content')
 				</div>
+				@include('partials.footer')
 			</div>
 		</div>
 		<!-- /#main -->
@@ -59,17 +60,6 @@
 			})();
 		</script>
 
-		<script>
-			if (window.console === undefined) {
-				window.console	= {};
-				console.debug	= function() {};
-				console.error	= function() {};
-				console.info	= function() {};
-				console.log		= function() {};
-				console.warn	= function() {};
-			}
-		</script>
-
 		<!-- JAVASCRIPT -->
 		<script type="text/javascript">var root = '{{url("/")}}';</script>
 
@@ -77,9 +67,12 @@
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
 
 		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/libs/pubSub.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/libs/rwdResize.js') }}" type="text/javascript"></script>
 
 		<script src="{{ url('js/wanderlust.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/wanderlust.intro.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.nav.js') }}" type="text/javascript"></script>
 
 	</body>
 </html>
