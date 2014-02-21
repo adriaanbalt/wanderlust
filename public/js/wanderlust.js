@@ -32,11 +32,18 @@ window.WANDERLUST = (function(self, window, undefined){
 			console.error = function() {};
 		}
 		
-		console.log('WANDERLUST.initialze');
+		console.log('WANDERLUST.initialize');
 
 		// Set body now that DOM is available	
 		WANDERLUST.$body = $('body');
 
+		var rwdResizeData = RwdResize.initialize({
+			small: 640,
+			medium: 1024,
+			large: 1140
+		}, WANDERLUST.$body );
+
+		WANDERLUST.Nav.initialize();
 		WANDERLUST.Intro.initialize();
 //		WANDERLUST.Models.initialize();
 
