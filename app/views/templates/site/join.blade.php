@@ -502,5 +502,14 @@
 		</div>
 	</div>
 	<!-- /end of step 2 -->
+
+	<form method="POST" enctype="multipart/form-data" action="/apply/Flashupload.php" id="image-upload-form" class='hidden'>
+		<input name="FileData" type="file" id="upload-image" onchange="uploadImage()" />
+		<input type="hidden" id="image-slot" name="image" value="" />
+		<input type="hidden" id="is-video" name="is_video" value="" />
+		<input type="hidden" id="DID" name="DID" value="" />
+		<input type="hidden" id="slot-id" name="" value="" />
+	</form>
+	
 </form>		
 @stop
