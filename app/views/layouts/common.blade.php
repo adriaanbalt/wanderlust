@@ -38,9 +38,7 @@
 			@include('partials.navigation')
 			<div id='content' class='mauve'>
 				@include('partials.definition')
-				<div class='wrapper'>
-					@yield('content')
-				</div>
+				@yield('content')
 				@include('partials.footer')
 			</div>
 		</div>
