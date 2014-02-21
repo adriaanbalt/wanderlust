@@ -32,6 +32,10 @@ class DatabaseSeeder extends Seeder {
 		$this->call('VideosTableSeeder');
 
 
+		$this->command->info('Definition next!');
+		$this->call('DefinitionTableSeeder');
+
+
 		$this->command->info('Some Girls next!');
 		$this->call('SomegirlsTableSeeder');
 
