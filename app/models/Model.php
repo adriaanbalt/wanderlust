@@ -44,7 +44,7 @@ class Model extends Eloquent
 		$this->title = $title;
 		return $this;
 	}
-	public function getTitle()
+	public function title()
 	{
 		return $this->title;
 	}
@@ -55,7 +55,7 @@ class Model extends Eloquent
 		$this->type = $type;
 		return $this;
 	}
-	public function getType()
+	public function type()
 	{
 		return $this->type;
 	}
@@ -66,7 +66,7 @@ class Model extends Eloquent
 		$this->template = $template;
 		return $this;
 	}
-	public function getTemplate()
+	public function template()
 	{
 		return $this->template;
 	}
