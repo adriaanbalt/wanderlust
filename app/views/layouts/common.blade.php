@@ -34,6 +34,7 @@
 	</head>
 	<body>
 		<div id="main" role="main" class='clearfix'>
+			@include('partials.intro')
 			<div id='content' class='mauve'>
 				@include('partials.header')
 				<div class='wrapper'>
@@ -64,6 +65,9 @@
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
 
 		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
+
+		<script src="{{ url('js/wanderlust.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.intro.js') }}" type="text/javascript"></script>
 
 	</body>
 </html>

@@ -6,8 +6,8 @@
 
 /**
  * @name WANDERLUST
- * @namespace The global namespace for the 2013 AKQA WANDERLUST Card.
- * @description The global namespace for the 2013 AKQA WANDERLUST Card.
+ * @namespace The global namespace for the WANDERLUST website
+ * @description The global namespace for the WANDERLUST website
  * @requires <a href="http://www.jquery.com">jQuery 1.7.2+</a>
  */
 window.WANDERLUST = (function(self, window, undefined){
@@ -37,7 +37,8 @@ window.WANDERLUST = (function(self, window, undefined){
 		// Set body now that DOM is available	
 		WANDERLUST.$body = $('body');
 
-		WANDERLUST.Models.initialize();
+		WANDERLUST.Intro.initialize();
+//		WANDERLUST.Models.initialize();
 
 		// prevent bootstrap from executing twice
 		self.initialized = true;
