@@ -44,7 +44,7 @@ WANDERLUST.Intro = (function(WANDERLUST, window, undefined){
 
 	ready = function() {
 		$('#intro').addClass('hide');
-		$('#intro').on( 'webkitTransitionEnd', 
+		$('#intro').on( 'transitionend', 'oTransitionEnd', 'webkitTransitionEnd', 
 			function( event ) { 
 				$('#intro').addClass('hidden');
 			});
