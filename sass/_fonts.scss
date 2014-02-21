@@ -135,12 +135,11 @@ nav a {
 	color: $nav-color;
 	font-family: abril-fatface, serif;
 	font-weight: normal;
-	font-size: 34px;
+	font-size: 56px;
 	letter-spacing: 0.041em;
 	text-align: center;
 	&:hover {
 		color: $nav-hover-color;
-		background: $nav-hover-bg-color;
 	}
 }
 
@@ -150,8 +149,7 @@ p {
 	font-weight: normal;
 	font-size: 21px;
 	letter-spacing: 0.041em;
-	line-height: 1.5em;
-	text-align: justify;
+	line-height: 1.25em;
 	padding: 0 1em;
 }
 
