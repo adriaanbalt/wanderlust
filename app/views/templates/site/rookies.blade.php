@@ -1,5 +1,6 @@
 @section('content')
-<h1>rookies</h1>
+<div class='models'>
+	<h1>rookies</h1>
 	<ul>
 @foreach( $data as $item )
 		<li>
@@ -10,4 +11,5 @@
 		</li>
 @endforeach
 	</ul>
+</div>
 @stop

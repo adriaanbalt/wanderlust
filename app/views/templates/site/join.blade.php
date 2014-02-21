@@ -1,5 +1,6 @@
 @section('content')
 
+<div id='join'>
 
 <h1>join</h1>
 
@@ -511,5 +512,7 @@
 		<input type="hidden" id="slot-id" name="" value="" />
 	</form>
 	
-</form>		
+</form>	
+
+</div>
 @stop
