@@ -429,26 +429,6 @@ section {
   max-width: 800px;
 }
 
-/* line 2, ../../sass/_talent.scss */
-#talent ul {
-  text-align: center;
-}
-/* line 4, ../../sass/_talent.scss */
-#talent ul li {
-  width: 30%;
-  display: inline-block;
-  text-align: center;
-}
-/* line 8, ../../sass/_talent.scss */
-#talent ul li a {
-  display: block;
-}
-/* line 11, ../../sass/_talent.scss */
-#talent ul li img {
-  max-width: 355px;
-  width: 100%;
-}
-
 /* line 1, ../../sass/_definition.scss */
 #definition {
   font-style: italic;
