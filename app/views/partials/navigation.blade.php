@@ -1,14 +1,16 @@
-<div id='navigation'>
+<div id='navigation' class='{{ $status }}'>
 	<a class='menu black' href='javascript:void(0);'></a>
-	<a class='menu white hidden' href='javascript:void(0);'></a>
-	<nav class='hidden'>
+	<a class='menu white' href='javascript:void(0);'></a>
+	<div class='container'>
+		<nav>
 @foreach( $navigation as $item )
-		<a href="/{{ $item['slug'] }}" class=''>
-			<div class='valign'></div>
-			<div class='item vcontent'>{{ $item['title'] }}</div>
-		</a>
+			<a href="/{{ $item['slug'] }}" class=''>
+				<div class='valign'></div>
+				<div class='item vcontent'>{{ $item['title'] }}</div>
+			</a>
 @endforeach
-	</nav>
+		</nav>
+	</div>
 	<!--
 	<div>
 		<select id="searchbox" name="q" placeholder="Search products or categories..." class="form-control"></select>
