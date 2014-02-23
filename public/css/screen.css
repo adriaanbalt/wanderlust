@@ -87,7 +87,7 @@ h1 {
   font-weight: 400;
   font-size: 96px;
   text-align: center;
-  color: black;
+  color: white;
   letter-spacing: 18px;
 }
 
@@ -105,7 +105,6 @@ h2 {
 
 /* line 74, ../../sass/_fonts.scss */
 h3 {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   text-align: center;
   color: black;
@@ -116,9 +115,8 @@ h3 {
   padding-bottom: .5em;
 }
 
-/* line 86, ../../sass/_fonts.scss */
+/* line 85, ../../sass/_fonts.scss */
 h4 {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   font-size: 72px;
   letter-spacing: 12px;
@@ -126,9 +124,8 @@ h4 {
   text-align: center;
 }
 
-/* line 95, ../../sass/_fonts.scss */
+/* line 93, ../../sass/_fonts.scss */
 h5 {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 0.041em;
@@ -136,39 +133,36 @@ h5 {
   color: black;
 }
 
-/* line 104, ../../sass/_fonts.scss */
+/* line 101, ../../sass/_fonts.scss */
 h6 {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   text-align: center;
   font-size: 24px;
   color: black;
   letter-spacing: 5px;
 }
-/* line 111, ../../sass/_fonts.scss */
+/* line 107, ../../sass/_fonts.scss */
 h6 span {
   color: black;
 }
 
-/* line 116, ../../sass/_fonts.scss */
+/* line 112, ../../sass/_fonts.scss */
 dt {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   text-align: center;
   font-size: 72px;
   color: black;
 }
 
-/* line 124, ../../sass/_fonts.scss */
+/* line 119, ../../sass/_fonts.scss */
 dd {
-  font-family: 'ProximaExtraBold';
   font-weight: normal;
   text-align: center;
   font-size: 18px;
   color: black;
 }
 
-/* line 132, ../../sass/_fonts.scss */
+/* line 126, ../../sass/_fonts.scss */
 nav a {
   font-size: 24px;
   letter-spacing: 3px;
@@ -179,15 +173,14 @@ nav a {
   letter-spacing: 0.041em;
   text-align: center;
 }
-/* line 141, ../../sass/_fonts.scss */
+/* line 135, ../../sass/_fonts.scss */
 nav a:hover {
   color: white;
 }
 
-/* line 146, ../../sass/_fonts.scss */
+/* line 140, ../../sass/_fonts.scss */
 p {
   color: black;
-  font-family: 'ProximaRegular';
   font-weight: normal;
   font-size: 21px;
   letter-spacing: 0.041em;
@@ -195,21 +188,21 @@ p {
   padding: 0 1em;
 }
 
-/* line 156, ../../sass/_fonts.scss */
+/* line 149, ../../sass/_fonts.scss */
 i {
   font-family: "ProximaRegular";
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 162, ../../sass/_fonts.scss */
+/* line 155, ../../sass/_fonts.scss */
 b, strong {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
   color: #1f1f1f;
 }
 
-/* line 168, ../../sass/_fonts.scss */
+/* line 161, ../../sass/_fonts.scss */
 a {
   color: black;
   font-weight: normal;
@@ -234,13 +227,13 @@ a {
 }
 
 /* line 15, ../../sass/_layout.scss */
-.hidden, #navigation.open .menu.black {
+.hidden, #navigation.closed .container, #navigation.closed .menu.white, #navigation.open .menu.black, #navigation.open .menu.white, #intro.closed {
   display: none;
   visibility: hidden;
 }
 
 /* line 19, ../../sass/_layout.scss */
-.shown, #navigation.open .menu.white, #navigation.open nav {
+.shown, #navigation.closed .menu.black, #navigation.open .container {
   display: block;
   visibility: visible;
 }
@@ -310,27 +303,12 @@ section {
 #content {
   background-size: cover;
   background-position: center center;
-  background-color: #010203;
+  background-color: #FFF;
   background-repeat: no-repeat;
   min-height: 100%;
   position: absolute;
   width: 100%;
-}
-/* line 2, ../../sass/_main.scss */
-#content.pink {
-  background-image: url(../images/records/record-pink.jpg);
-}
-/* line 5, ../../sass/_main.scss */
-#content.black {
-  background-image: url(../images/records/record-black.jpg);
-}
-/* line 8, ../../sass/_main.scss */
-#content.gray {
-  background-image: url(../images/records/record-gray.jpg);
-}
-/* line 11, ../../sass/_main.scss */
-#content.mauve {
-  background-image: url(../images/records/sleeve.jpg);
+  text-align: center;
 }
 
 /* line 1, ../../sass/_navigation.scss */
@@ -339,30 +317,37 @@ section {
   top: 0;
   z-index: 100;
 }
-/* line 5, ../../sass/_navigation.scss */
-#navigation nav {
-  opacity: 0;
-  filter: alpha(opacity=0);
+/* line 6, ../../sass/_navigation.scss */
+#navigation .container {
+  background-image: url(../images/records/sleeve.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 15, ../../sass/_navigation.scss */
+#navigation .container nav {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
 }
-/* line 11, ../../sass/_navigation.scss */
-#navigation nav a {
+/* line 20, ../../sass/_navigation.scss */
+#navigation .container nav a {
   display: block;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   width: 100%;
   height: 20%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 12, ../../sass/_navigation.scss */
-#navigation nav a:hover {
-  background: black;
+/* line 21, ../../sass/_navigation.scss */
+#navigation .container nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
-/* line 24, ../../sass/_navigation.scss */
+/* line 33, ../../sass/_navigation.scss */
 #navigation .menu {
   position: absolute;
   left: 1em;
@@ -370,29 +355,39 @@ section {
   padding: 1em;
   z-index: 100;
 }
-/* line 30, ../../sass/_navigation.scss */
+/* line 39, ../../sass/_navigation.scss */
 #navigation .menu.white {
   display: none;
   background: transparent url(../images/menu-white.svg) 50% 50% no-repeat;
   width: 50px;
   height: 30px;
 }
-/* line 36, ../../sass/_navigation.scss */
+/* line 45, ../../sass/_navigation.scss */
 #navigation .menu.black {
   background: transparent url(../images/menu-black.svg) 50% 50% no-repeat;
   display: block;
   width: 50px;
   height: 30px;
 }
-/* line 43, ../../sass/_navigation.scss */
+/* line 53, ../../sass/_navigation.scss */
+#navigation.closed .container {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 64, ../../sass/_navigation.scss */
 #navigation.open {
   width: 100%;
   min-height: 100%;
 }
+/* line 73, ../../sass/_navigation.scss */
+#navigation.open .container {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 
 /* line 1, ../../sass/_logo.scss */
-.logo-black {
-  width: 300px;
+.logo {
+  width: 400px;
   margin: 1.5em auto .5em auto;
   display: block;
 }
@@ -407,58 +402,167 @@ section {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: opacity 0.5s ease-in 0;
-  -moz-transition: opacity 0.5s ease-in 0;
-  -o-transition: opacity 0.5s ease-in 0;
-  transition: opacity 0.5s ease-in 0;
+  z-index: 1000;
+  -webkit-transition: opacity 0.2s ease-in 0;
+  -moz-transition: opacity 0.2s ease-in 0;
+  -o-transition: opacity 0.2s ease-in 0;
+  transition: opacity 0.2s ease-in 0;
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 16, ../../sass/_intro.scss */
+/* line 17, ../../sass/_intro.scss */
 #intro.hide {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 19, ../../sass/_intro.scss */
+/* line 20, ../../sass/_intro.scss */
 #intro .logo-pink {
   width: 90%;
   max-width: 800px;
 }
 
-/* line 2, ../../sass/_models.scss */
-.models ul {
-  padding: .5%;
+/* line 1, ../../sass/_models.scss */
+#models {
+  padding: 7em 0 5em 0;
 }
-/* line 4, ../../sass/_models.scss */
-.models ul li {
-  display: inline-block;
-  width: 32.5%;
-}
-/* line 7, ../../sass/_models.scss */
-.models ul li a {
+/* line 8, ../../sass/_models.scss */
+#models ul li a {
   position: relative;
   display: block;
 }
-/* line 10, ../../sass/_models.scss */
-.models ul li a img {
+/* line 11, ../../sass/_models.scss */
+#models ul li a img {
   width: 100%;
-  position: absolute;
   z-index: 0;
   top: 0;
 }
 /* line 16, ../../sass/_models.scss */
-.models ul li a p {
+#models ul li a p {
   position: absolute;
   z-index: 1;
   top: 0;
+}
+
+/* Again, you're free to use and define the classes: */
+/* line 27, ../../sass/_models.scss */
+.column {
+  float: left;
+}
+
+/* line 28, ../../sass/_models.scss */
+.size-1of1 {
+  width: 100%;
+}
+
+/* line 29, ../../sass/_models.scss */
+.size-1of2 {
+  width: 50%;
+}
+
+/* line 30, ../../sass/_models.scss */
+.size-1of3 {
+  width: 33.333%;
+}
+
+/* line 31, ../../sass/_models.scss */
+.size-1of4 {
+  width: 25%;
+}
+
+/* Also, don't forget to add this: */
+/* line 35, ../../sass/_models.scss */
+[data-columns]::before {
+  position: absolute;
+  right: 9999em;
+  bottom: 9999em;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 44, ../../sass/_models.scss */
+  #grid[data-columns]::before {
+    content: '1 .column.size-1of1';
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 49, ../../sass/_models.scss */
+  #grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* line 54, ../../sass/_models.scss */
+  #grid[data-columns]::before {
+    content: '3 .column.size-1of3';
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 59, ../../sass/_models.scss */
+  #grid[data-columns]::before {
+    content: '4 .column.size-1of4';
+  }
+}
+/* line 1, ../../sass/_about.scss */
+#about {
+  margin: 3em;
+}
+/* line 4, ../../sass/_about.scss */
+#about p {
+  font-style: italic;
+  margin: 1.5em 0 0 0;
+}
+
+/* line 1, ../../sass/_contact.scss */
+#contact {
+  margin: 9em 0;
+}
+/* line 3, ../../sass/_contact.scss */
+#contact div {
+  margin: 1em 0;
 }
 
 /* line 1, ../../sass/_definition.scss */
 #definition {
   font-style: italic;
   text-align: center;
+  margin: 2em 0 0 0;
+}
+/* line 5, ../../sass/_definition.scss */
+#definition p {
+  font-size: 16px;
+}
+/* line 8, ../../sass/_definition.scss */
+#definition .logo {
+  width: 400px;
+  margin: 1.5em auto .5em auto;
+  display: block;
+}
+
+/* line 1, ../../sass/_footer.scss */
+footer {
+  margin-top: 3em;
+  font-style: italic;
+  text-align: center;
+}
+/* line 5, ../../sass/_footer.scss */
+footer p {
+  font-size: 14px;
+}
+/* line 8, ../../sass/_footer.scss */
+footer .logo {
+  width: 150px;
+  margin: 2em auto;
+  display: block;
+}
+/* line 14, ../../sass/_footer.scss */
+footer .balt {
+  padding: 3em 0;
+}
+/* line 16, ../../sass/_footer.scss */
+footer .balt img {
+  width: 35px;
 }
