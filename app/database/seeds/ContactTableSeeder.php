@@ -21,17 +21,17 @@ class ContactTableSeeder extends Seeder {
 					'position' => 'Director',
 					'telephone' => '414.702.8225',
 					'fax' => '',
-					'email' => 'info@wanderlustmgmt.com',
-					'address' => '1815 Purdy Ave., Miami Beach 33139',
+					'email' => 'chad@wanderlustmgmt.com',
+					'address' => '',
 					'website' => 'www.wanderlustmgmt.com'
 			),
 			array(
-					'name' => 'Guillaume',
+					'name' => 'Guillaume Terrasson',
 					'position' => 'Director',
 					'telephone' => '414.702.8225',
 					'fax' => '',
-					'email' => 'info@wanderlustmgmt.com',
-					'address' => '1815 Purdy Ave., Miami Beach 33139',
+					'email' => 'guillaume@wanderlustmgmt.com',
+					'address' => '',
 					'website' => 'www.wanderlustmgmt.com'
 			)
 		);

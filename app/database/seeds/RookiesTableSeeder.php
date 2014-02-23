@@ -8,6 +8,33 @@ class RookiesTableSeeder extends Seeder {
 		DB::table('rookies')->delete();
 
 		$array = array(
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 7
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 3
+			),
+
 			array(
 					'slug' => 'chelsea',
 					'name' => 'Chelsea',
@@ -19,6 +46,32 @@ class RookiesTableSeeder extends Seeder {
 					'hair' => 'hair',
 					'eyes' => 'eyes',
 					'photocover_id' => 1
+			),
+
+			array(
+					'slug' => 'chelsea',
+					'name' => 'Chelsea',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 4
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 6
 			),
 
 			array(
@@ -35,8 +88,8 @@ class RookiesTableSeeder extends Seeder {
 			),
 
 			array(
-					'slug' => 'Maria',
-					'name' => 'Maria',
+					'slug' => 'Irina',
+					'name' => 'Irina',
 					'height' => 'height',
 					'bust' => 'bust',
 					'waist' => 'waist',
@@ -44,7 +97,7 @@ class RookiesTableSeeder extends Seeder {
 					'shoes' => 'shoes',
 					'hair' => 'hair',
 					'eyes' => 'eyes',
-					'photocover_id' => 3
+					'photocover_id' => 5
 			)
 		);
 

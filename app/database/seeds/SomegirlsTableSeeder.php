@@ -45,6 +45,97 @@ class SomegirlsTableSeeder extends Seeder {
 					'hair' => 'hair',
 					'eyes' => 'eyes',
 					'photocover_id' => 3
+			),
+
+			array(
+					'slug' => 'chelsea',
+					'name' => 'Chelsea',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 4
+			),
+
+			array(
+					'slug' => 'Irina',
+					'name' => 'Irina',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 5
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 6
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 7
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 8
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 9
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 10
 			)
 		);
 

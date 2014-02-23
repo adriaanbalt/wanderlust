@@ -22,6 +22,41 @@ class PhotosTableSeeder extends Seeder {
 					'title' => 'photo 3',
 					'slug' => 'cover',
 					'path' => 'images/models/maria/0-cover-bw.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/irina/Ira Karlova_28.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/chelsea/chelseaTHUMB.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/irina/_MG_8462.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/maria/Exame00.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/irina/IrinaLips-9-2012.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/chelsea/545662_287306998036739_643155477_n.jpg'
+			),
+			array(
+					'title' => 'photo 3',
+					'slug' => 'cover',
+					'path' => 'images/models/chelsea/grayscale-overals.jpg'
 			)
 		);
 
