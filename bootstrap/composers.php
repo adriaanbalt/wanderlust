@@ -19,3 +19,12 @@ View::composer('partials.definition', function($view)
 });
 
 
+View::composer('partials.footer', function($view)
+{
+	$data = ContactModel::find(1);
+	$view->with('data', $data );
+});
+
+
+
+
