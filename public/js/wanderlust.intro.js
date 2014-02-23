@@ -18,7 +18,7 @@ WANDERLUST.Intro = (function(WANDERLUST, window, undefined){
 	var config = {
 		initialized: false,
 		timeout: 5000,
-		skip: true
+		skip: false
 	},
 
 	/**
@@ -44,9 +44,10 @@ WANDERLUST.Intro = (function(WANDERLUST, window, undefined){
 
 	ready = function() {
 		$('#intro').addClass('hide');
-		$('#intro').on( 'transitionend', 'oTransitionEnd', 'webkitTransitionEnd', 
+		$('#intro').on( 'webkitTransitionEnd', 
 			function( event ) { 
 				$('#intro').addClass('hidden');
+				console.log ( "INTRO Complete" );
 			});
 	};
 
