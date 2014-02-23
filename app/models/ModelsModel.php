@@ -2,47 +2,47 @@
 
 class ModelsModel extends Model {
 
-	public function getSlug()
+	public function slug()
 	{
 		return $this->slug;
 	}
 
-	public function getName()
+	public function name()
 	{
 		return $this->name;
 	}
 
-	public function getHeight()
+	public function height()
 	{
 		return $this->height;
 	}
 
-	public function getBust()
+	public function bust()
 	{
 		return $this->bust;
 	}
 
-	public function getWaist()
+	public function waist()
 	{
 		return $this->waist;
 	}
 
-	public function getHips()
+	public function hips()
 	{
 		return $this->hips;
 	}
 
-	public function getShoes()
+	public function shoes()
 	{
 		return $this->shoes;
 	}
 
-	public function getHair()
+	public function hair()
 	{
 		return $this->hair;
 	}
 
-	public function getEyes()
+	public function eyes()
 	{
 		return $this->eyes;
 	}
@@ -50,6 +50,11 @@ class ModelsModel extends Model {
 	public function cover()
 	{
 		return $this->hasOne('PhotosModel', 'id');
+	}
+
+	public function photos()
+	{
+		return $this->hasMany('PhotosModel', 'id');
 	}
 
 }
