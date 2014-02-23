@@ -45,7 +45,7 @@ window.WANDERLUST = (function(self, window, undefined){
 
 		WANDERLUST.Nav.initialize();
 		WANDERLUST.Intro.initialize();
-//		WANDERLUST.Models.initialize();
+		WANDERLUST.Models.initialize();
 
 		// prevent bootstrap from executing twice
 		self.initialized = true;
