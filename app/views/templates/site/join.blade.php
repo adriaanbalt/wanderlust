@@ -2,7 +2,7 @@
 
 <div id='join'>
 
-<h1>join</h1>
+<h1>JOIN THE BAND</h1>
 
 <form name="f" id="joinnForm" method="post" action="/thankyou.php" enctype="multipart/form-data">
 		
