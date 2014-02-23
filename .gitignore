@@ -21,3 +21,5 @@ Thumbs.db
 logs/error.log
 logs/access.log
 logs/*
+
+app/config/remote.php
