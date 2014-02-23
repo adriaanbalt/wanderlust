@@ -32,7 +32,7 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 		console.log ( 'WANDERLUST.Nav.initialize' );
 
 		$navigation = $('#navigation');
-		$nav = $('#navigation nav');
+		$nav = $('#navigation .container');
 		$menuBlack = $('#navigation .menu.black');
 		$menuWhite = $('#navigation .menu.white');
 
