@@ -16,7 +16,18 @@ window.WANDERLUST = window.WANDERLUST || {};
 WANDERLUST.Models = (function(WANDERLUST, window, undefined){
 	
 	var config = {
-		initialized: false
+		initialized: false,
+		columns: 150, 
+		rows:150, 
+		margin: 1
+	},
+
+
+	_Model = function( $target ) {
+		console.log ( "model " );
+		this.$target = $target;
+		this.$target.data('this', this);
+		this.setWidth();
 	},
 
 	/**
@@ -26,14 +37,37 @@ WANDERLUST.Models = (function(WANDERLUST, window, undefined){
 	 * @description
 	 */
 	_initialize = function() {
-		console.log ( 'WANDERLUST.Models.initialize' );
-	},
+		console.log ( 'WANDERLUST.Models.initialize ', $('#grid ul li') );
+		$('#grid ul li').each( function() {
+			console.log ( "here " );
+			model = new _Model( $(this) );
+		});
+		// $('#grid ul').masonry({
+		// 	itemSelector : 'li',
+		// 	isResizable: true
+		// });
+	};
 
-	ready = function() {
-	},
+	_Model.prototype = {
 
-	raf = function() {
-		requestAnimationFrame( raf );
+		setWidth : function() {
+			// var max = 40,
+			// 	min = 25,
+			// 	r = Math.floor(Math.random() * (max - min + 1)) + min;
+			
+			// console.log ( "setWidth: ", r );
+
+			// this.$target.width( r + '%' );
+		},
+
+		resize : function() {
+
+		},
+
+		randomWidth : function( min, max ) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+			
 	};
 	
 	// public methods for this class
