@@ -85,3 +85,12 @@ $vendors: webkit, moz, ms, o;
 	-o-transition: $prop $duration $ease $delay;
 	transition: $prop $duration $ease $delay;
 }
+
+@mixin column-width( $width ) {
+	column-width: $width;
+	-webkit-column-width: $width;
+	-moz-column-width: $width;
+	// -webkit-column-gap:   20px;  
+	// -moz-column-gap:      20px;
+	// column-gap:           20px;
+}

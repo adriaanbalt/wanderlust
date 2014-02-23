@@ -1,4 +1,13 @@
 #definition {
 	font-style: italic;
 	text-align: center;
+	margin: 2em 0 0 0;
+	p{
+		font-size: 16px;
+	}
+	.logo {
+		width: 400px;
+		margin: 1.5em auto .5em auto;
+		display: block;
+	}
 }
