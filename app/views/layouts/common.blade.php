@@ -33,9 +33,11 @@
 		<script src="{{ url('js/libs/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
 	</head>
 	<body>
-		<div id="main" role="main" class='clearfix'>
-			@include('partials.intro')
-			@include('partials.navigation')
+		<div id="main" role="main" class=''>
+			@if( Request::segment(1) == '' )
+				@include('partials.intro', array('status'=>'open'))
+			@endif
+			@include('partials.navigation', array('status'=>'closed'))
 			<div id='content' class='mauve'>
 				@include('partials.definition')
 				@yield('content')
@@ -64,12 +66,14 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
 
+		<script src="{{ url('js/libs/salvattore.min.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/libs/pubSub.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/libs/rwdResize.js') }}" type="text/javascript"></script>
 
 		<script src="{{ url('js/wanderlust.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/wanderlust.intro.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.models.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/wanderlust.nav.js') }}" type="text/javascript"></script>
 
 	</body>
