@@ -1,38 +1,38 @@
 <?php
 
-class PivotRookiesPhotosTableSeeder extends Seeder {
+class PivotWomenPhotosTableSeeder extends Seeder {
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
-		DB::table('rookies_photos')->delete();
+		DB::table('women_photos')->delete();
 
 		$array = array(
 			array(
-					'rookies_id' => 1,
+					'women_id' => 1,
 					'photo_id' => 1
 			),
 			array(
-					'rookies_id' => 2,
+					'women_id' => 2,
 					'photo_id' => 2
 			),
 			array(
-					'rookies_id' => 3,
+					'women_id' => 3,
 					'photo_id' => 3
 			)
 		);
 
 		
-		DB::table('rookies_photos')->insert($array);
+		DB::table('women_photos')->insert($array);
 	}
 
 }
 
 
 /*
-	$table->foreign('model_id')
+	$table->foreign('women_id')
 		->references('id')
-		->on('models')
+		->on('women')
 		->on_delete('restrict')
 		->on_update('cascade');
 	
