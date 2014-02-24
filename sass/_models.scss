@@ -1,6 +1,7 @@
 #models {
-	padding: 7em 0 5em 0;
+	padding: 0 0 5em 0;
 	ul {
+		padding: .5em;
 		// padding: .5%;
 		li {
 			// display: inline-block;
@@ -8,6 +9,7 @@
 			a {
 				position: relative;
 				display: block;
+				padding: 3px;
 				img { 
 					width: 100%;
 					z-index: 0;
@@ -29,6 +31,7 @@
 .size-1of2 { width: 50%; }
 .size-1of3 { width: 33.333%; }
 .size-1of4 { width: 25%; }
+.size-1of5 { width: 20%; }
 
 
 /* Also, don't forget to add this: */
@@ -55,8 +58,14 @@
 		content: '3 .column.size-1of3';
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1224px) {
 	#grid[data-columns]::before {
 		content: '4 .column.size-1of4';
 	}
 }
+@media screen and (min-width: 1224px) {
+	#grid[data-columns]::before {
+		content: '5 .column.size-1of5';
+	}
+}
+

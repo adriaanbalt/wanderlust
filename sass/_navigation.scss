@@ -1,7 +1,22 @@
 #navigation {
+	nav {
+		width: 100%;
+		margin: 3em auto 5em 0;
+		a {
+			font-size: 1.5em;
+			padding: .5em;
+			&:hover {
+				background: $nav-hover-bg-color;
+			}
+		}
+	}
+}
+
+#navigation-mobile {
 	position: fixed;
 	top: 0;
 	z-index: 100;
+	display: none;
 
 	.container {
 		background-image: url(../images/records/sleeve.jpg);
@@ -21,6 +36,7 @@
 				&:hover {
 					background: $nav-hover-bg-color;
 				}
+				font-size: 34px;
 				display: block;
 				text-align: center;
 				color: #fff; 
@@ -76,3 +92,27 @@
 		}
 	}
 }
+
+
+
+
+
+@media screen and (max-width: 640px){
+	#navigation {
+		display: none;
+	}
+	#navigation-mobile {
+		display: block;
+	}
+}
+@media screen and (min-width: 641px) {
+	#navigation {
+		display: block;
+	}
+	#navigation-mobile {
+		display: none;
+	}
+}
+
+
+
