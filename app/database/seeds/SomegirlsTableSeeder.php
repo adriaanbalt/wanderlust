@@ -136,6 +136,136 @@ class SomegirlsTableSeeder extends Seeder {
 					'hair' => 'hair',
 					'eyes' => 'eyes',
 					'photocover_id' => 10
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 11
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 12
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 13
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 14
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 15
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 16
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 17
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 18
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 19
+			),
+
+			array(
+					'slug' => 'Maria',
+					'name' => 'Maria',
+					'height' => 'height',
+					'bust' => 'bust',
+					'waist' => 'waist',
+					'hips' => 'hips',
+					'shoes' => 'shoes',
+					'hair' => 'hair',
+					'eyes' => 'eyes',
+					'photocover_id' => 20
 			)
 		);
 
