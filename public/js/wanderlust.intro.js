@@ -43,12 +43,13 @@ WANDERLUST.Intro = (function(WANDERLUST, window, undefined){
 	},
 
 	ready = function() {
-		$('#intro').addClass('hide');
-		$('#intro').on( 'webkitTransitionEnd', 
-			function( event ) { 
-				$('#intro').addClass('hidden');
-				console.log ( "INTRO Complete" );
-			});
+		window.location.href = '/some-girls';
+		// $('#intro').addClass('hide');
+		// $('#intro').on( 'webkitTransitionEnd', 
+		// 	function( event ) { 
+		// 		$('#intro').addClass('hidden');
+		// 		console.log ( "INTRO Complete" );
+		// 	});
 	};
 
 	// public methods for this class
