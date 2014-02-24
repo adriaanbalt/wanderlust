@@ -54,7 +54,7 @@ class ModelsModel extends Model {
 
 	public function photos()
 	{
-		return $this->hasMany('PhotosModel', 'id');
+		return $this->hasMany('PhotosModel');
 	}
 
 }
