@@ -6,7 +6,7 @@ class ModelsPhotosModel extends Model {
 
 	public function models()
 	{
-		return $this->belongsTo('ModelsModel','model_id','photocover_id');
+		return $this->belongsTo('ModelsModel','women_id','photocover_id');
 	}
 
 }
