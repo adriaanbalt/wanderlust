@@ -13,7 +13,7 @@
 		<meta name="description" content="" />
 		<link rel="canonical" href="" />
 		
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' />
+		<meta name='viewport' content='width=640, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' />
 		<link rel="shortcut icon" href="./favicon.ico" >
 
 		<meta property="og:title" content=""/>
