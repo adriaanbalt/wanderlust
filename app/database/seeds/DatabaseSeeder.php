@@ -25,8 +25,6 @@ class DatabaseSeeder extends Seeder {
 		$this->command->info('Contact next!');
 		$this->call('ContactTableSeeder');
 
-		$this->command->info('Photos next!');
-		$this->call('PhotosTableSeeder');
 
 		$this->command->info('Videos next!');
 		$this->call('VideosTableSeeder');
@@ -36,30 +34,35 @@ class DatabaseSeeder extends Seeder {
 		$this->call('DefinitionTableSeeder');
 
 
-		$this->command->info('Some Girls next!');
-		$this->call('SomegirlsTableSeeder');
+		$this->command->info('Women next!');
+		$this->call('WomenTableSeeder');
 
-		$this->command->info('Rookies next!');
-		$this->call('RookiesTableSeeder');
+		$this->command->info('Development next!');
+		$this->call('DevelopmentTableSeeder');
 
-		// $this->call('MusiciansTableSeeder');
-		// $this->command->info('Musicians seeded!');
+
+		$this->command->info('Photos next!');
+		$this->call('PhotosTableSeeder');
+
+
+		$this->call('UpdatedWomenTableSeeder');
+		$this->command->info('Updated Women seeded!');
 		
 
 		$this->command->info('Pivot Some Girls Photos next!');
-		$this->call('PivotSomegirlsPhotosTableSeeder');
+		$this->call('PivotWomenPhotosTableSeeder');
 
 
-		$this->command->info('Pivot Rookies Photos next!');
-		$this->call('PivotRookiesPhotosTableSeeder');
+		$this->command->info('Pivot Development Photos next!');
+		$this->call('PivotdevelopmentPhotosTableSeeder');
 
 
 		$this->command->info('Pivot Some Girls Videos next!');
-		$this->call('PivotSomegirlsVideosTableSeeder');
+		$this->call('PivotWomenVideosTableSeeder');
 		
 
-		$this->command->info('Pivot Rookies Videos next!');
-		$this->call('PivotRookiesVideosTableSeeder');
+		$this->command->info('Pivot Development Videos next!');
+		$this->call('PivotdevelopmentVideosTableSeeder');
 
 
 	}
