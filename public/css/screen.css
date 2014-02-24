@@ -163,22 +163,34 @@ dd {
 }
 
 /* line 126, ../../sass/_fonts.scss */
-nav a {
-  font-size: 24px;
+#navigation nav a {
+  letter-spacing: 3px;
+  color: black;
+  font-family: abril-fatface, serif;
+  font-weight: normal;
+  letter-spacing: 0.041em;
+  text-align: center;
+}
+/* line 133, ../../sass/_fonts.scss */
+#navigation nav a:hover {
+  color: #666666;
+}
+
+/* line 138, ../../sass/_fonts.scss */
+#navigation-mobile nav a {
   letter-spacing: 3px;
   color: white;
   font-family: abril-fatface, serif;
   font-weight: normal;
-  font-size: 56px;
   letter-spacing: 0.041em;
   text-align: center;
 }
-/* line 135, ../../sass/_fonts.scss */
-nav a:hover {
-  color: white;
+/* line 145, ../../sass/_fonts.scss */
+#navigation-mobile nav a:hover {
+  color: #666666;
 }
 
-/* line 140, ../../sass/_fonts.scss */
+/* line 150, ../../sass/_fonts.scss */
 p {
   color: black;
   font-weight: normal;
@@ -188,21 +200,21 @@ p {
   padding: 0 1em;
 }
 
-/* line 149, ../../sass/_fonts.scss */
+/* line 159, ../../sass/_fonts.scss */
 i {
   font-family: "ProximaRegular";
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 155, ../../sass/_fonts.scss */
+/* line 165, ../../sass/_fonts.scss */
 b, strong {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
   color: #1f1f1f;
 }
 
-/* line 161, ../../sass/_fonts.scss */
+/* line 171, ../../sass/_fonts.scss */
 a {
   color: black;
   font-weight: normal;
@@ -227,13 +239,13 @@ a {
 }
 
 /* line 15, ../../sass/_layout.scss */
-.hidden, #navigation.closed .container, #navigation.closed .menu.white, #navigation.open .menu.black, #navigation.open .menu.white, #intro.closed {
+.hidden, #navigation-mobile.closed .container, #navigation-mobile.closed .menu.white, #navigation-mobile.open .menu.black, #navigation-mobile.open .menu.white, #intro.closed {
   display: none;
   visibility: hidden;
 }
 
 /* line 19, ../../sass/_layout.scss */
-.shown, #navigation.closed .menu.black, #navigation.open .container {
+.shown, #navigation-mobile.closed .menu.black, #navigation-mobile.open .container {
   display: block;
   visibility: visible;
 }
@@ -311,14 +323,30 @@ section {
   text-align: center;
 }
 
-/* line 1, ../../sass/_navigation.scss */
-#navigation {
+/* line 2, ../../sass/_navigation.scss */
+#navigation nav {
+  width: 100%;
+  margin: 3em auto 5em 0;
+}
+/* line 5, ../../sass/_navigation.scss */
+#navigation nav a {
+  font-size: 1.5em;
+  padding: .5em;
+}
+/* line 8, ../../sass/_navigation.scss */
+#navigation nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 15, ../../sass/_navigation.scss */
+#navigation-mobile {
   position: fixed;
   top: 0;
   z-index: 100;
+  display: none;
 }
-/* line 6, ../../sass/_navigation.scss */
-#navigation .container {
+/* line 21, ../../sass/_navigation.scss */
+#navigation-mobile .container {
   background-image: url(../images/records/sleeve.jpg);
   background-size: cover;
   background-position: center center;
@@ -328,67 +356,90 @@ section {
   width: 100%;
   height: 100%;
 }
-/* line 15, ../../sass/_navigation.scss */
-#navigation .container nav {
+/* line 30, ../../sass/_navigation.scss */
+#navigation-mobile .container nav {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
 }
-/* line 20, ../../sass/_navigation.scss */
-#navigation .container nav a {
+/* line 35, ../../sass/_navigation.scss */
+#navigation-mobile .container nav a {
+  font-size: 34px;
   display: block;
   text-align: center;
   color: #fff;
   width: 100%;
   height: 20%;
 }
-/* line 21, ../../sass/_navigation.scss */
-#navigation .container nav a:hover {
+/* line 36, ../../sass/_navigation.scss */
+#navigation-mobile .container nav a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 33, ../../sass/_navigation.scss */
-#navigation .menu {
+/* line 49, ../../sass/_navigation.scss */
+#navigation-mobile .menu {
   position: absolute;
   left: 1em;
   top: 1em;
   padding: 1em;
   z-index: 100;
 }
-/* line 39, ../../sass/_navigation.scss */
-#navigation .menu.white {
+/* line 55, ../../sass/_navigation.scss */
+#navigation-mobile .menu.white {
   display: none;
   background: transparent url(../images/menu-white.svg) 50% 50% no-repeat;
   width: 50px;
   height: 30px;
 }
-/* line 45, ../../sass/_navigation.scss */
-#navigation .menu.black {
+/* line 61, ../../sass/_navigation.scss */
+#navigation-mobile .menu.black {
   background: transparent url(../images/menu-black.svg) 50% 50% no-repeat;
   display: block;
   width: 50px;
   height: 30px;
 }
-/* line 53, ../../sass/_navigation.scss */
-#navigation.closed .container {
+/* line 69, ../../sass/_navigation.scss */
+#navigation-mobile.closed .container {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 64, ../../sass/_navigation.scss */
-#navigation.open {
+/* line 80, ../../sass/_navigation.scss */
+#navigation-mobile.open {
   width: 100%;
   min-height: 100%;
 }
-/* line 73, ../../sass/_navigation.scss */
-#navigation.open .container {
+/* line 89, ../../sass/_navigation.scss */
+#navigation-mobile.open .container {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
+@media screen and (max-width: 640px) {
+  /* line 101, ../../sass/_navigation.scss */
+  #navigation {
+    display: none;
+  }
+
+  /* line 104, ../../sass/_navigation.scss */
+  #navigation-mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 641px) {
+  /* line 109, ../../sass/_navigation.scss */
+  #navigation {
+    display: block;
+  }
+
+  /* line 112, ../../sass/_navigation.scss */
+  #navigation-mobile {
+    display: none;
+  }
+}
 /* line 1, ../../sass/_logo.scss */
 .logo {
   width: 400px;
-  margin: 1.5em auto .5em auto;
+  margin: 3em auto;
   display: block;
 }
 
@@ -427,20 +478,25 @@ section {
 
 /* line 1, ../../sass/_models.scss */
 #models {
-  padding: 7em 0 5em 0;
+  padding: 0 0 5em 0;
 }
-/* line 8, ../../sass/_models.scss */
+/* line 3, ../../sass/_models.scss */
+#models ul {
+  padding: .5em;
+}
+/* line 9, ../../sass/_models.scss */
 #models ul li a {
   position: relative;
   display: block;
+  padding: 3px;
 }
-/* line 11, ../../sass/_models.scss */
+/* line 13, ../../sass/_models.scss */
 #models ul li a img {
   width: 100%;
   z-index: 0;
   top: 0;
 }
-/* line 16, ../../sass/_models.scss */
+/* line 18, ../../sass/_models.scss */
 #models ul li a p {
   position: absolute;
   z-index: 1;
@@ -448,33 +504,38 @@ section {
 }
 
 /* Again, you're free to use and define the classes: */
-/* line 27, ../../sass/_models.scss */
+/* line 29, ../../sass/_models.scss */
 .column {
   float: left;
 }
 
-/* line 28, ../../sass/_models.scss */
+/* line 30, ../../sass/_models.scss */
 .size-1of1 {
   width: 100%;
 }
 
-/* line 29, ../../sass/_models.scss */
+/* line 31, ../../sass/_models.scss */
 .size-1of2 {
   width: 50%;
 }
 
-/* line 30, ../../sass/_models.scss */
+/* line 32, ../../sass/_models.scss */
 .size-1of3 {
   width: 33.333%;
 }
 
-/* line 31, ../../sass/_models.scss */
+/* line 33, ../../sass/_models.scss */
 .size-1of4 {
   width: 25%;
 }
 
+/* line 34, ../../sass/_models.scss */
+.size-1of5 {
+  width: 20%;
+}
+
 /* Also, don't forget to add this: */
-/* line 35, ../../sass/_models.scss */
+/* line 38, ../../sass/_models.scss */
 [data-columns]::before {
   position: absolute;
   right: 9999em;
@@ -483,27 +544,33 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 44, ../../sass/_models.scss */
+  /* line 47, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '1 .column.size-1of1';
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 49, ../../sass/_models.scss */
+  /* line 52, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '2 .column.size-1of2';
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 54, ../../sass/_models.scss */
+  /* line 57, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '3 .column.size-1of3';
   }
 }
-@media screen and (min-width: 1024px) {
-  /* line 59, ../../sass/_models.scss */
+@media screen and (min-width: 1024px) and (max-width: 1224px) {
+  /* line 62, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '4 .column.size-1of4';
+  }
+}
+@media screen and (min-width: 1224px) {
+  /* line 67, ../../sass/_models.scss */
+  #grid[data-columns]::before {
+    content: '5 .column.size-1of5';
   }
 }
 /* line 1, ../../sass/_about.scss */
@@ -534,12 +601,6 @@ section {
 /* line 5, ../../sass/_definition.scss */
 #definition p {
   font-size: 16px;
-}
-/* line 8, ../../sass/_definition.scss */
-#definition .logo {
-  width: 400px;
-  margin: 1.5em auto .5em auto;
-  display: block;
 }
 
 /* line 1, ../../sass/_footer.scss */
