@@ -10,15 +10,25 @@
 				position: relative;
 				display: block;
 				padding: 3px;
+				@include transition( opacity, .2s, ease-in );
+				&:hover {
+					img {
+					//	@include opacity( .7 );
+					}
+				}
 				img { 
 					width: 100%;
 					z-index: 0;
 					top: 0;
 				}
-				p {
+				> div{
 					position: absolute;
 					z-index: 1;
-					top: 0;
+					bottom: 0;
+					width: 100%;
+					p {
+						background: #fff;
+					}
 				}
 			}
 		}

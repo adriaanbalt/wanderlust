@@ -5,7 +5,10 @@
 		<li>
 			<a href="{{ Request::segment(1) }}/{{ $item['slug'] }}">
 				<img src="{{ URL::asset( $item->cover->path ) }}"/>
-				<!-- <p>{{ $item['name'] }}</p> -->
+				<div>
+					<div class='valign'></div>
+					<p class='vcontent'>{{ $item['name'] }}</p>
+				</div>
 			</a>
 		</li>
 @endforeach

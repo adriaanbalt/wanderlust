@@ -21,7 +21,7 @@ class PhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/maria/0-cover-bw.jpg'
+					'path' => 'images/models/maria/0-cover-bw.JPG'
 			),
 			array(
 					'title' => '',
@@ -36,7 +36,7 @@ class PhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/_MG_8462.jpg'
+					'path' => 'images/models/irina/Irina_8462.jpg'
 			),
 			array(
 					'title' => '',
@@ -46,7 +46,7 @@ class PhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/IrinaLips-9-2012.jpg'
+					'path' => 'images/models/irina/Irina-lips.jpg'
 			),
 			array(
 					'title' => '',
