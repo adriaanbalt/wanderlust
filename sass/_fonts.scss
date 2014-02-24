@@ -123,13 +123,23 @@ dd {
 	color: $dd-color;
 }
 
-nav a {
-	font-size: 24px;
+#navigation nav a {
 	letter-spacing: 3px;
 	color: $nav-color;
 	font-family: abril-fatface, serif;
 	font-weight: normal;
-	font-size: 56px;
+	letter-spacing: 0.041em;
+	text-align: center;
+	&:hover {
+		color: $nav-hover-color;
+	}
+}
+
+#navigation-mobile nav a {
+	letter-spacing: 3px;
+	color: $nav-mobile-color;
+	font-family: abril-fatface, serif;
+	font-weight: normal;
 	letter-spacing: 0.041em;
 	text-align: center;
 	&:hover {

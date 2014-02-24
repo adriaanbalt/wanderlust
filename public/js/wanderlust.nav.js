@@ -31,10 +31,10 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 	_initialize = function() {
 		console.log ( 'WANDERLUST.Nav.initialize' );
 
-		$navigation = $('#navigation');
-		$nav = $('#navigation .container');
-		$menuBlack = $('#navigation .menu.black');
-		$menuWhite = $('#navigation .menu.white');
+		$navigation = $('#navigation-mobile');
+		$nav = $('#navigation-mobile .container');
+		$menuBlack = $('#navigation-mobile .menu.black');
+		$menuWhite = $('#navigation-mobile .menu.white');
 
 		$menuBlack.on('click', toggleNav );
 		$menuWhite.on('click', toggleNav );
