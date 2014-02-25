@@ -4,7 +4,8 @@ class WomenController extends BaseController {
 
 	public function index()
 	{
-		$data = WomenModel::all();
+		$data = WomenPhotosModel::all();
+		debug ( $data );
 		$this->layout->content = View::make('templates.site.models')->withData($data);
 	}
 
