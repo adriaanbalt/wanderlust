@@ -16,14 +16,14 @@ class CreatePivotDevelopmentVideosTable extends Migration {
 		{
 	        $table->engine ='InnoDB';
 
-			$table->integer('development_id')->unsigned();
+			$table->integer('development_id')->unsigned()->nullable();
 			$table->foreign('development_id')
 				->references('id')
 				->on('development')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
-			$table->integer('video_id')->unsigned();
+			$table->integer('video_id')->unsigned()->nullable();
 			$table->foreign('video_id')
 				->references('id')
 				->on('videos')
