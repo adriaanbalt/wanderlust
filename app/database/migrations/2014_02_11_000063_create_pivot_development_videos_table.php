@@ -16,6 +16,8 @@ class CreatePivotDevelopmentVideosTable extends Migration {
 		{
 	        $table->engine ='InnoDB';
 
+			$table->increments('id');
+			
 			$table->integer('development_id')->unsigned()->nullable();
 			$table->foreign('development_id')
 				->references('id')

@@ -16,6 +16,8 @@ class CreatePivotWomenPhotosTable extends Migration {
 		{
 	        $table->engine ='InnoDB';
 
+			$table->increments('id');
+			
 			$table->integer('women_id')->unsigned()->nullable();
 			$table->foreign('women_id')
 				->references('id')
