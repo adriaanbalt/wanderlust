@@ -43,7 +43,7 @@ WANDERLUST.Intro = (function(WANDERLUST, window, undefined){
 	},
 
 	ready = function() {
-		window.location.href = '/some-girls';
+		window.location.href = 'some-girls';
 		// $('#intro').addClass('hide');
 		// $('#intro').on( 'webkitTransitionEnd', 
 		// 	function( event ) { 
