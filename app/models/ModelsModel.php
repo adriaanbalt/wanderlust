@@ -49,12 +49,12 @@ class ModelsModel extends Model {
 
 	public function cover()
 	{
-		return $this->hasOne('PhotosModel', 'id');
+		return $this->hasOne('Photos', 'id');
 	}
 
 	public function photos()
 	{
-		return $this->hasMany('PhotosModel');
+		return $this->hasMany('Photos');
 	}
 
 }

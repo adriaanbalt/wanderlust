@@ -1,6 +1,6 @@
 <?php
 
-class DevelopmentPhotosModel extends Model {
+class DevelopmentPhotos extends Model {
 
 	protected $table = 'development_photos';
 
@@ -11,7 +11,7 @@ class DevelopmentPhotosModel extends Model {
 
 	public function cover()
 	{
-		return $this->hasOne('PhotosModel','photocover_id');
+		return $this->hasOne('Photos','photocover_id');
 	}
 
 }

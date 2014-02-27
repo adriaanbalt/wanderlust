@@ -40,6 +40,9 @@ class DatabaseSeeder extends Seeder {
 
 
 
+		$this->call('WomenBoardTableSeeder');
+		$this->command->info('Women Board finished!');
+
 		$this->call('WomenTableSeeder');
 		$this->command->info('Women finished!');
 
@@ -63,8 +66,8 @@ class DatabaseSeeder extends Seeder {
 
 
 
-		$this->call('PivotWomenPhotosTableSeeder');
-		$this->command->info('Pivot Some Girls Photos finished!');
+		$this->call('PivotWomenPhotosBoardTableSeeder');
+		$this->command->info('Pivot Women Photos Board finished!');
 
 
 		$this->call('PivotdevelopmentPhotosTableSeeder');
