@@ -4,15 +4,16 @@ class WomenController extends BaseController {
 
 	public function index()
 	{
-		$data = WomenPhotosModel::all();
-		debug ( $data );
+		$data = WomenPhotosBoard::all();
+		$o = WomenPhotosBoard::find(4)->cover->path;
+		debug ( $o );
 		$this->layout->content = View::make('templates.site.models')->withData($data);
 	}
 
 	public function details( $id )
 	{
-		$data = WomenModel::where( 'slug', '=', $id )->firstOrFail()->photos;
-		$name = WomenModel::where( 'slug', '=', $id )->firstOrFail()->name;
+		$data = Women::where( 'slug', '=', $id )->firstOrFail()->photos;
+		$name = Women::where( 'slug', '=', $id )->firstOrFail()->name;
 		$this->layout->content = View::make('templates.site.details')->with( 'data', $data)->with('name', $name );
 	}
 
