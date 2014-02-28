@@ -24,6 +24,11 @@ View::composer('partials.definition', function($view)
 	$view->with('data', $data );
 });
 
+View::composer('partials.intro', function($view)
+{
+	$data = DefinitionModel::all();
+	$view->with('data', $data );
+});
 
 View::composer('partials.footer', function($view)
 {
