@@ -73,6 +73,4 @@ require $framework.'/Illuminate/Foundation/start.php';
 // Register view coposers
 require_once "composers.php";
 
-require_once "dependencies.php";
-
 return $app;
