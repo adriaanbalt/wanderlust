@@ -13,56 +13,73 @@ class DatabaseSeeder extends Seeder {
 
 		$this->command->info('HERE WE GO!');
 
-		$this->command->info('Navigation next!');
 		$this->call('NavigationTableSeeder');
+		$this->command->info('Navigation finished!');
 
-		$this->command->info('About next!');
 		$this->call('AboutTableSeeder');
+		$this->command->info('About finished!');
 
-		$this->command->info('Join next!');
+		
 		$this->call('JoinTableSeeder');
+		$this->command->info('Join finished!');
 
-		$this->command->info('Contact next!');
 		$this->call('ContactTableSeeder');
+		$this->command->info('Contact finished!');
 
 
-		$this->command->info('Videos next!');
+
+
+
 		$this->call('VideosTableSeeder');
+		$this->command->info('Videos finished!');
 
 
-		$this->command->info('Definition next!');
 		$this->call('DefinitionTableSeeder');
+		$this->command->info('Definition finished!');
 
 
-		$this->command->info('Women next!');
+
+
+		$this->call('WomenBoardTableSeeder');
+		$this->command->info('Women Board finished!');
+
 		$this->call('WomenTableSeeder');
+		$this->command->info('Women finished!');
 
-		$this->command->info('Development next!');
 		$this->call('DevelopmentTableSeeder');
+		$this->command->info('Development finished!');
 
 
-		$this->command->info('Photos next!');
 		$this->call('PhotosTableSeeder');
+		$this->command->info('Photos finished!');
+
+
 
 
 		$this->call('UpdatedWomenTableSeeder');
-		$this->command->info('Updated Women seeded!');
+		$this->command->info('Updated Women!');
+
+
+		$this->call('UpdatedDevelopmentTableSeeder');
+		$this->command->info('Updated Development!');
 		
 
-		$this->command->info('Pivot Some Girls Photos next!');
-		$this->call('PivotWomenPhotosTableSeeder');
 
 
-		$this->command->info('Pivot Development Photos next!');
+		$this->call('PivotWomenPhotosBoardTableSeeder');
+		$this->command->info('Pivot Women Photos Board finished!');
+
+
 		$this->call('PivotdevelopmentPhotosTableSeeder');
+		$this->command->info('Pivot Development Photos finished!');
 
 
-		$this->command->info('Pivot Some Girls Videos next!');
 		$this->call('PivotWomenVideosTableSeeder');
+		$this->command->info('Pivot Some Girls Videos finished!');
 		
 
-		$this->command->info('Pivot Development Videos next!');
 		$this->call('PivotdevelopmentVideosTableSeeder');
+		$this->command->info('Pivot Development Videos finished!');
 
 
 	}

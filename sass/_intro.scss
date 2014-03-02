@@ -24,4 +24,7 @@
 	&.closed {
 		@extend .hidden;
 	}
+	p {
+		color: #fff;
+	}
 }

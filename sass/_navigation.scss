@@ -6,7 +6,7 @@
 			font-size: 1.5em;
 			padding: .5em;
 			&:hover {
-				background: $nav-hover-bg-color;
+				// background: $nav-hover-bg-color;
 			}
 		}
 	}
@@ -21,7 +21,7 @@
 	.container {
 		background-image: url(../images/records/sleeve.jpg);
 		background-size: cover;
-		background-position: center center;
+		background-position: top left;
 		background-color: #fff;
 		background-repeat: no-repeat;
 		position: absolute;

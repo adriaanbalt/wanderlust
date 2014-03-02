@@ -1,6 +1,8 @@
 <?php
 
-class ModelsModel extends Model {
+class Women extends Model {
+
+	protected $table = 'women';
 
 	public function slug()
 	{
@@ -54,21 +56,6 @@ class ModelsModel extends Model {
 
 	public function photos()
 	{
-		return $this->hasMany('Photos');
+		return $this->hasMany( 'Photos', 'women_id' );
 	}
-
 }
-
-
-/*
-    $table->string('slug');
-
-    $table->string('name');
-    $table->string('height');
-    $table->string('bust');
-    $table->string('waist');
-    $table->string('hips');
-    $table->string('shoes');
-    $table->string('hair');
-    $table->string('eyes');
-*/

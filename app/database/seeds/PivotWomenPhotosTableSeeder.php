@@ -9,16 +9,76 @@ class PivotWomenPhotosTableSeeder extends Seeder {
 
 		$array = array(
 			array(
-					'women_id' => 1,
-					'photo_id' => 1
+					'photo_id' => '1',
+					'women_id' => '1'
 			),
 			array(
-					'women_id' => 2,
-					'photo_id' => 2
+					'photo_id' => '2',
+					'women_id' => '1'
 			),
 			array(
-					'women_id' => 3,
-					'photo_id' => 3
+					'photo_id' => '3',
+					'women_id' => '1'
+			),
+			array(
+					'photo_id' => '4',
+					'women_id' => '2'
+			),
+			array(
+					'photo_id' => '5',
+					'women_id' => '3'
+			),
+			array(
+					'photo_id' => '6',
+					'women_id' => '2'
+			),
+			array(
+					'photo_id' => '7',
+					'women_id' => '1'
+			),
+			array(
+					'photo_id' => '8',
+					'women_id' => '1'
+			),
+			array(
+					'photo_id' => '9',
+					'women_id' => '3'
+			),
+			array(
+					'photo_id' => '12',
+					'women_id' => '2'
+			),
+			array(
+					'photo_id' => '13',
+					'women_id' => '1'
+			),
+			array(
+					'photo_id' => '14',
+					'women_id' => '2'
+			),
+			array(
+					'photo_id' => '15',
+					'women_id' => '3'
+			),
+			array(
+					'photo_id' => '16',
+					'women_id' => '3'
+			),
+			array(
+					'photo_id' => '17',
+					'women_id' => '2'
+			),
+			array(
+					'photo_id' => '18',
+					'women_id' => '1'
+			),
+			array(
+					'photo_id' => '19',
+					'women_id' => '3'
+			),
+			array(
+					'photo_id' => '20',
+					'women_id' => '1'
 			)
 		);
 

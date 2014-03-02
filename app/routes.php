@@ -1,5 +1,9 @@
 <?php
 
+// Event::listen( 'illuminate.query', function( $sql ){
+// 	var_dump($sql);
+// });
+
 Route::get('/', 'HomeController@index');
 Route::get('/some-girls', 'WomenController@index');
 Route::get('/some-girls/{id}', 'WomenController@details');

@@ -9,19 +9,19 @@
 		
 		<title>WANDERLUST</title>
 		
-		<meta name="title" content="" />
-		<meta name="description" content="" />
-		<link rel="canonical" href="" />
+		<meta name="title" content="WANDERLUST" />
+		<meta name="description" content="WANDERLUST is a modelling agency representing great talent" />
+		<link rel="canonical" href="http://www.WANDERLUSTMGMT.com" />
 		
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
 		<link rel="shortcut icon" href="./favicon.ico" >
 
-		<meta property="og:title" content=""/>
+		<meta property="og:title" content="WANDERLUST"/>
 		<meta property="og:type" content=""/>
-		<meta property="og:url" content=""/>
+		<meta property="og:url" content="www.WANDERLUSTMGMT.com"/>
 		<meta property="og:image" content=""/>
-		<meta property="og:site_name" content=""/>
-		<meta property="og:description" content=""/>
+		<meta property="og:site_name" content="WANDERLUST"/>
+		<meta property="og:description" content="WANDERLUST is a modelling agency representing great talent"/>
 
 		<link href="{{ url('css/screen.css') }}" rel="stylesheet" />
 		<link href="{{ url('css/selectize.bootstrap3.css') }}" rel="stylesheet">
@@ -50,16 +50,13 @@
 
 		<!-- Add your own Google Analytics UA number or remove this snippet -->
 		<script>
-			var codes = ['UA-#########-1'], _gaq = _gaq || [];
-			for(i in codes) {
-				_gaq.push(['_setAccount', codes[i]]);
-				_gaq.push(['_trackPageview']);
-			}
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-###-1', 'wanderlustmgmt.com');
+			ga('send', 'pageview');
 		</script>
 
 		<!-- JAVASCRIPT -->
@@ -75,7 +72,7 @@
 
 		<script src="{{ url('js/wanderlust.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/wanderlust.intro.js') }}" type="text/javascript"></script>
-		<script src="{{ url('js/wanderlust.models.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.details.js') }}" type="text/javascript"></script>
 		<script src="{{ url('js/wanderlust.nav.js') }}" type="text/javascript"></script>
 
 	</body>

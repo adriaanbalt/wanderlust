@@ -10,8 +10,8 @@ class DevelopmentTableSeeder extends Seeder {
 		$array = array(
 
 			array(
-					'slug' => 'maria',
-					'name' => 'Maria',
+					'slug' => 'irina',
+					'name' => 'Irina',
 					'height' => '',
 					'bust' => '',
 					'waist' => '',
@@ -38,58 +38,6 @@ class DevelopmentTableSeeder extends Seeder {
 			array(
 					'slug' => 'chelsea',
 					'name' => 'Chelsea',
-					'height' => '',
-					'bust' => '',
-					'waist' => '',
-					'hips' => '',
-					'shoes' => '',
-					'hair' => '',
-					'eyes' => '',
-					'photocover_id' => null
-			),
-
-			array(
-					'slug' => 'chelsea',
-					'name' => 'Chelsea',
-					'height' => '',
-					'bust' => '',
-					'waist' => '',
-					'hips' => '',
-					'shoes' => '',
-					'hair' => '',
-					'eyes' => '',
-					'photocover_id' => null
-			),
-
-			array(
-					'slug' => 'maria',
-					'name' => 'Maria',
-					'height' => '',
-					'bust' => '',
-					'waist' => '',
-					'hips' => '',
-					'shoes' => '',
-					'hair' => '',
-					'eyes' => '',
-					'photocover_id' => null
-			),
-
-			array(
-					'slug' => 'irina',
-					'name' => 'Irina',
-					'height' => '',
-					'bust' => '',
-					'waist' => '',
-					'hips' => '',
-					'shoes' => '',
-					'hair' => '',
-					'eyes' => '',
-					'photocover_id' => null
-			),
-
-			array(
-					'slug' => 'irina',
-					'name' => 'Irina',
 					'height' => '',
 					'bust' => '',
 					'waist' => '',

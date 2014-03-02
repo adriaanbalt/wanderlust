@@ -16,14 +16,16 @@ class CreatePivotDevelopmentPhotosTable extends Migration {
 		{
 	        $table->engine ='InnoDB';
 
-			$table->integer('development_id')->unsigned();
+			$table->increments('id');
+			
+			$table->integer('development_id')->unsigned()->nullable();
 			$table->foreign('development_id')
 				->references('id')
 				->on('development')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
-			$table->integer('photo_id')->unsigned();
+			$table->integer('photo_id')->unsigned()->nullable();
 			$table->foreign('photo_id')
 				->references('id')
 				->on('photos')

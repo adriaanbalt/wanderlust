@@ -1,6 +1,6 @@
 <?php
 
-class PhotosModel extends Model {
+class Photos extends Model {
 
 	protected $table = 'photos';
 
@@ -11,14 +11,12 @@ class PhotosModel extends Model {
 
 	public function women()
 	{
-		return $this->belongsTo('WomenModel','women_id');
+		return $this->belongsTo('Women','women_id');
+	}
+
+	public function path()
+	{
+		return $this->path;
 	}
 
 }
-
-
-/*
-	$table->string('title');
-	$table4->string('slug');
-	$table->string('path');
-*/
