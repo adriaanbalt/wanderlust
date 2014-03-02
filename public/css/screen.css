@@ -94,16 +94,15 @@ h1 {
 /* line 63, ../../sass/_fonts.scss */
 h2 {
   font-family: "Garamond", "Georgia", serif;
-  font-weight: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 2px;
   line-height: 38px;
   color: black;
   font-style: italic;
 }
 
-/* line 74, ../../sass/_fonts.scss */
+/* line 73, ../../sass/_fonts.scss */
 h3 {
   font-weight: normal;
   text-align: center;
@@ -115,7 +114,7 @@ h3 {
   padding-bottom: .5em;
 }
 
-/* line 85, ../../sass/_fonts.scss */
+/* line 84, ../../sass/_fonts.scss */
 h4 {
   font-weight: normal;
   font-size: 72px;
@@ -124,7 +123,7 @@ h4 {
   text-align: center;
 }
 
-/* line 93, ../../sass/_fonts.scss */
+/* line 92, ../../sass/_fonts.scss */
 h5 {
   font-weight: normal;
   font-size: 30px;
@@ -133,7 +132,7 @@ h5 {
   color: black;
 }
 
-/* line 101, ../../sass/_fonts.scss */
+/* line 100, ../../sass/_fonts.scss */
 h6 {
   font-weight: normal;
   text-align: center;
@@ -141,12 +140,12 @@ h6 {
   color: black;
   letter-spacing: 5px;
 }
-/* line 107, ../../sass/_fonts.scss */
+/* line 106, ../../sass/_fonts.scss */
 h6 span {
   color: black;
 }
 
-/* line 112, ../../sass/_fonts.scss */
+/* line 111, ../../sass/_fonts.scss */
 dt {
   font-weight: normal;
   text-align: center;
@@ -154,7 +153,7 @@ dt {
   color: black;
 }
 
-/* line 119, ../../sass/_fonts.scss */
+/* line 118, ../../sass/_fonts.scss */
 dd {
   font-weight: normal;
   text-align: center;
@@ -162,7 +161,7 @@ dd {
   color: black;
 }
 
-/* line 126, ../../sass/_fonts.scss */
+/* line 125, ../../sass/_fonts.scss */
 #navigation nav a {
   letter-spacing: 3px;
   color: black;
@@ -171,12 +170,12 @@ dd {
   letter-spacing: 0.041em;
   text-align: center;
 }
-/* line 133, ../../sass/_fonts.scss */
+/* line 132, ../../sass/_fonts.scss */
 #navigation nav a:hover {
   color: #666666;
 }
 
-/* line 138, ../../sass/_fonts.scss */
+/* line 137, ../../sass/_fonts.scss */
 #navigation-mobile nav a {
   letter-spacing: 3px;
   color: white;
@@ -185,12 +184,12 @@ dd {
   letter-spacing: 0.041em;
   text-align: center;
 }
-/* line 145, ../../sass/_fonts.scss */
+/* line 144, ../../sass/_fonts.scss */
 #navigation-mobile nav a:hover {
   color: #666666;
 }
 
-/* line 150, ../../sass/_fonts.scss */
+/* line 149, ../../sass/_fonts.scss */
 p {
   color: black;
   font-weight: normal;
@@ -200,21 +199,21 @@ p {
   padding: 0 1em;
 }
 
-/* line 159, ../../sass/_fonts.scss */
+/* line 158, ../../sass/_fonts.scss */
 i {
   font-family: "ProximaRegular";
   font-weight: normal;
   font-style: italic;
 }
 
-/* line 165, ../../sass/_fonts.scss */
+/* line 164, ../../sass/_fonts.scss */
 b, strong {
   font-family: 'ProximaExtraBold';
   font-weight: normal;
   color: #1f1f1f;
 }
 
-/* line 171, ../../sass/_fonts.scss */
+/* line 170, ../../sass/_fonts.scss */
 a {
   color: black;
   font-weight: normal;
@@ -313,10 +312,10 @@ section {
 
 /* line 1, ../../sass/_main.scss */
 #content {
-  background-size: cover;
-  background-position: center center;
+  background-image: url(../images/records/sleeve.jpg);
+  background-size: contain;
+  background-position: top left;
   background-color: #FFF;
-  background-repeat: no-repeat;
   min-height: 100%;
   position: absolute;
   width: 100%;
@@ -333,10 +332,6 @@ section {
   font-size: 1.5em;
   padding: .5em;
 }
-/* line 8, ../../sass/_navigation.scss */
-#navigation nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 /* line 15, ../../sass/_navigation.scss */
 #navigation-mobile {
@@ -349,7 +344,7 @@ section {
 #navigation-mobile .container {
   background-image: url(../images/records/sleeve.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: top left;
   background-color: #fff;
   background-repeat: no-repeat;
   position: absolute;
@@ -476,6 +471,10 @@ section {
   width: 90%;
   max-width: 800px;
 }
+/* line 27, ../../sass/_intro.scss */
+#intro p {
+  color: #fff;
+}
 
 /* line 1, ../../sass/_models.scss */
 #models {
@@ -505,7 +504,7 @@ section {
 #models ul li a > div {
   position: absolute;
   z-index: 1;
-  bottom: 0;
+  bottom: 6px;
   width: 100%;
 }
 /* line 29, ../../sass/_models.scss */
@@ -583,6 +582,31 @@ section {
     content: '5 .column.size-1of5';
   }
 }
+/* line 2, ../../sass/_details.scss */
+#details .stats {
+  margin: 1em 0 2em 0;
+}
+/* line 4, ../../sass/_details.scss */
+#details .stats p {
+  display: inline-block;
+}
+/* line 8, ../../sass/_details.scss */
+#details ul {
+  padding: 0 1%;
+}
+/* line 11, ../../sass/_details.scss */
+#details ul li .empty {
+  width: 49%;
+  float: left;
+  height: 1px;
+}
+/* line 16, ../../sass/_details.scss */
+#details ul li img {
+  float: left;
+  width: 49%;
+  vertical-align: top;
+}
+
 /* line 1, ../../sass/_about.scss */
 #about {
   margin: 3em;
