@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'     => 'mysql.balt.us',
-			'database' => 'wanderlust_prod_db',
+			'database' => 'wanderlust_db',
 			'username' => 'wanderlust_db',
 			'password' => 'Wander1',
 			'charset'   => 'utf8',
