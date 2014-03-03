@@ -35,13 +35,6 @@ class CreateWomenTable extends Migration {
 				->on('photos')
 				->on_delete('restrict')
 				->on_update('cascade');
-
-			$table->integer('board_id')->unsigned()->nullable();
-			$table->foreign('board_id')
-				->references('id')
-				->on('womenboard')
-				->on_delete('restrict')
-				->on_update('cascade');
 			
 			$table->timestamps();
 		});
