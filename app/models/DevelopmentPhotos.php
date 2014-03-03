@@ -6,12 +6,11 @@ class DevelopmentPhotos extends Model {
 
 	public function model()
 	{
-		return $this->hasOne('DevelopmentModel','development_id');
+		return $this->hasOne('Development', 'id', 'development_id');
 	}
 
 	public function cover()
 	{
-		return $this->hasOne('Photos','photocover_id');
+		return $this->hasOne('Photos', 'id', 'photo_id');
 	}
-
 }

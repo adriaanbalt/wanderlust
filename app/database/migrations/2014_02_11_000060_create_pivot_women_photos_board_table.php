@@ -17,13 +17,6 @@ class CreatePivotWomenPhotosBoardTable extends Migration {
 	        $table->engine ='InnoDB';
 			
 			$table->increments('id');
-			
-			$table->integer('board_id')->unsigned()->nullable();
-			$table->foreign('board_id')
-				->references('id')
-				->on('womenboard')
-				->on_delete('restrict')
-				->on_update('cascade');
 				
 			$table->integer('women_id')->unsigned()->nullable();
 			$table->foreign('women_id')
