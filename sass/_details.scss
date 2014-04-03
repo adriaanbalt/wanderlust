@@ -13,10 +13,14 @@
 				float: left;
 				height: 1px;
 			}
-			img {
+			a {
 				float: left;
 				width: 49%;
 				vertical-align: top;
+				overflow: hidden;
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}

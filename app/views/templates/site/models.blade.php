@@ -1,4 +1,7 @@
 @section('content')
+<div id='content'>
+@include('partials.logo')
+@include('partials.navigation', array('status'=>'closed'))
 <div id='models'>
 	<ul id='grid' class='clearfix' data-columns>
 @foreach( $data as $item )
@@ -13,5 +16,8 @@
 		</li>
 @endforeach
 	</ul>
+</div>
+@include('partials.definition')
+@include('partials.footer')
 </div>
 @stop

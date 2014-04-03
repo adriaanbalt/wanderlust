@@ -1,4 +1,7 @@
 @section('content')
+<div id='content' class='mauve'>
+@include('partials.logo')
+@include('partials.navigation', array('status'=>'closed'))
 
 <div id='join'>
 
@@ -514,5 +517,9 @@
 	
 </form>	
 
+</div>
+
+@include('partials.definition')
+@include('partials.footer')
 </div>
 @stop

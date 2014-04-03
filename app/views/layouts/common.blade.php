@@ -38,13 +38,7 @@
 				@include('partials.intro', array('status'=>'open'))
 			@endif
 			@include('partials.navigation-mobile', array('status'=>'closed'))
-			<div id='content' class='mauve'>
-				@include('partials.logo')
-				@include('partials.navigation', array('status'=>'closed'))
-				@yield('content')
-				@include('partials.definition')
-				@include('partials.footer')
-			</div>
+			@yield('content')
 		</div>
 		<!-- /#main -->
 

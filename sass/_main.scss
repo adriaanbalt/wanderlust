@@ -8,11 +8,11 @@
 	// &.gray {
 	// 	background-image: url(../images/records/record-gray.jpg);
 	// }
-	// &.mauve {
-	background-image: url(../images/records/sleeve.jpg);
-	// }
-	background-size: contain;
-	background-position: top left;
+	&.mauve {
+		background-image: url(../images/records/sleeve.jpg);
+		background-size: contain;
+		background-position: top left;
+	}
 	background-color: #FFF;
 	// background-repeat: no-repeat;
 	min-height: 100%;

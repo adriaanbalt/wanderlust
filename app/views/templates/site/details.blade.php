@@ -1,4 +1,8 @@
 @section('content')
+<div id='content' class='mauve'>
+@include('partials.logo')
+@include('partials.navigation', array('status'=>'closed'))
+
 <div id='details'>
 	<h2>{{ $name }}</h2>
 	<div class='stats'>
@@ -32,5 +36,9 @@
 	<?php $index++; ?>
 @endforeach
 	</ul>
+</div>
+
+@include('partials.definition')
+@include('partials.footer')
 </div>
 @stop
