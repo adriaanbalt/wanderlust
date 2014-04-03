@@ -312,14 +312,17 @@ section {
 
 /* line 1, ../../sass/_main.scss */
 #content {
-  background-image: url(../images/records/sleeve.jpg);
-  background-size: contain;
-  background-position: top left;
   background-color: #FFF;
   min-height: 100%;
   position: absolute;
   width: 100%;
   text-align: center;
+}
+/* line 11, ../../sass/_main.scss */
+#content.mauve {
+  background-image: url(../images/records/sleeve.jpg);
+  background-size: contain;
+  background-position: top left;
 }
 
 /* line 2, ../../sass/_navigation.scss */
@@ -601,10 +604,15 @@ section {
   height: 1px;
 }
 /* line 16, ../../sass/_details.scss */
-#details ul li img {
+#details ul li a {
   float: left;
   width: 49%;
   vertical-align: top;
+  overflow: hidden;
+}
+/* line 21, ../../sass/_details.scss */
+#details ul li a img {
+  width: 100%;
 }
 
 /* line 1, ../../sass/_about.scss */
