@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'app' => '/home/balt/laravel-wanderlust/app',
+	'app' => __DIR__.'/../app',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'public' => '/home/balt/clients.balt.us/wanderlust',
+	'public' => __DIR__.'/../public',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'base' => '/home/balt/laravel-wanderlust',
+	'base' => __DIR__.'/..',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,6 +52,6 @@ return array(
 	|
 	*/
 
-	'storage' => '/home/balt/laravel-wanderlust/app/storage',
+	'storage' => __DIR__.'/../app/storage',
 
 );
