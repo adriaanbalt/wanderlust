@@ -29,19 +29,11 @@ class DatabaseSeeder extends Seeder {
 
 
 
-
-		$this->call('VideosTableSeeder');
-		$this->command->info('Videos finished!');
-
-
 		$this->call('DefinitionTableSeeder');
 		$this->command->info('Definition finished!');
 
 
 
-
-		$this->call('WomenBoardTableSeeder');
-		$this->command->info('Women Board finished!');
 
 		$this->call('WomenTableSeeder');
 		$this->command->info('Women finished!');
@@ -50,9 +42,11 @@ class DatabaseSeeder extends Seeder {
 		$this->command->info('Development finished!');
 
 
-		$this->call('PhotosTableSeeder');
-		$this->command->info('Photos finished!');
+		$this->call('WomenPhotosTableSeeder');
+		$this->command->info('Women Photos finished!');
 
+		$this->call('DevelopmentPhotosTableSeeder');
+		$this->command->info('Development Photos finished!');
 
 
 
@@ -70,17 +64,8 @@ class DatabaseSeeder extends Seeder {
 		$this->command->info('Pivot Women Photos Board finished!');
 
 
-		$this->call('PivotdevelopmentPhotosTableSeeder');
+		$this->call('PivotDevelopmentPhotosBoardTableSeeder');
 		$this->command->info('Pivot Development Photos finished!');
-
-
-		$this->call('PivotWomenVideosTableSeeder');
-		$this->command->info('Pivot Some Girls Videos finished!');
-		
-
-		$this->call('PivotdevelopmentVideosTableSeeder');
-		$this->command->info('Pivot Development Videos finished!');
-
 
 	}
 

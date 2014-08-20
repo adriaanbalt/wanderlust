@@ -32,7 +32,7 @@ class CreateDevelopmentTable extends Migration {
 			$table->integer('photocover_id')->unsigned()->nullable();
 			$table->foreign('photocover_id')
 				->references('id')
-				->on('photos')
+				->on('development_photos')
 				->on_delete('restrict')
 				->on_update('cascade');
 			

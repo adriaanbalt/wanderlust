@@ -32,7 +32,7 @@ class CreateWomenTable extends Migration {
 			$table->integer('photocover_id')->unsigned()->nullable();
 			$table->foreign('photocover_id')
 				->references('id')
-				->on('photos')
+				->on('women_photos')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
