@@ -4,10 +4,7 @@ class DevelopmentController extends BaseController {
 
 	public function index()
 	{
-		// $o = DevelopmentPhotos::find(4)->cover->path;
-		// debug ( $o );
-
-		$data = DevelopmentPhotos::all();
+		$data = DevelopmentPhotosBoard::all();
 
 		$this->layout->content = View::make('templates.site.models')->withData($data);
 	}
