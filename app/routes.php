@@ -4,7 +4,7 @@
 // 	var_dump($sql);
 // });
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'WomenController@index');
 Route::get('/women', 'WomenController@index');
 Route::get('/women/{id}', 'WomenController@details');
 Route::get('/rookies', 'DevelopmentController@index');
