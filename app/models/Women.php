@@ -6,6 +6,12 @@ class Women extends ModelsModel {
 
 	public function photos()
 	{
-		return $this->hasMany( 'Photos', 'women_id' );
+		return $this->hasMany( 'WomenPhotos', 'women_id' );
 	}
+
+	public function cover()
+	{
+		return $this->hasOne('WomenPhotos', 'id');
+	}
+
 }

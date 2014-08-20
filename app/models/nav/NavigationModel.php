@@ -52,12 +52,6 @@ class NavigationModel extends Model {
 			$nav_item->setTitle( $n->attributes['title'] );
 			$nav_item->setSlug( $n->attributes['slug'] );
 
-			$subnav = NavigationModel::find($n->attributes['id'])->subnav;
-
-			foreach ( $subnav as $s ) {
-				$nav_item->addSubNavItem( $s );
-			}
-
 			if ($cur_section == $n->url) {
 				// $nav->setSubnav($nav_item->getSubnav());
 				$nav->setSelectedItem($n->url);
@@ -65,12 +59,6 @@ class NavigationModel extends Model {
 
 			$nav->addNavItem($nav_item);
 		}
-
-		// foreach ($nav->getSubnav() as $s) {
-		// 	if ($cur_subsection == $s->getUrlTitle()) {
-		// 		$nav->getSelectedSubItem($s->getUrlTitle());
-		// 	}
-		// }
 
 		return $nav;
 	}
@@ -87,11 +75,6 @@ class NavigationModel extends Model {
 		return $this;
 	}
 
-	public function subnav()
-	{
-        return $this->hasMany('SubNavItemModel',"nav_id");
-	}
-
 	public function getSelectedItem()
 	{
 		return $this->$selected;
@@ -99,16 +82,6 @@ class NavigationModel extends Model {
 	public function setSelectedItem( $str )
 	{
 		$this->selected = $str;
-		return $this;
-	}
-
-	public function getSelectedSubItem()
-	{
-		return $this->selectedSub;
-	}
-	public function setSelectedSubItem( $str )
-	{
-		$this->selectedSub = $str;
 		return $this;
 	}
 

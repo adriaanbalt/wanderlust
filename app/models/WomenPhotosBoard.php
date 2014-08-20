@@ -11,7 +11,7 @@ class WomenPhotosBoard extends Model {
 
 	public function cover()
 	{
-		return $this->hasOne('Photos', 'id', 'photo_id');
+		return $this->hasOne('WomenPhotos', 'id', 'photo_id');
 	}
 
 }

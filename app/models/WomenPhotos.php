@@ -1,15 +1,15 @@
 <?php
 
-class Photos extends Model {
+class WomenPhotos extends Model {
 
-	protected $table = 'photos';
+	protected $table = 'women_photos';
 
 	public function cover()
 	{
 		return $this->belongsTo('ModelsModel','women_id','photocover_id');
 	}
 
-	public function women()
+	public function model()
 	{
 		return $this->belongsTo('Women','women_id');
 	}

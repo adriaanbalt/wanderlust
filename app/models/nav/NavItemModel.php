@@ -22,18 +22,6 @@ class NavItemModel extends Model {
 		return $slug;
 	}
 
-	public function addSubNavItem( $subNavItem )
-	{
-		$this->subnav[] = $subNavItem;
-		return $this;
-	}
-
-	public function getSubnav()
-    {
-        return $this->hasMany('SubNavItemModel');
-    }
-
-
 	public function setColor( $color_id )
 	{
 		$this->color_id = $color_id;

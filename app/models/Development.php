@@ -6,6 +6,12 @@ class Development extends ModelsModel {
 
 	public function photos()
 	{
-		return $this->hasMany( 'Photos', 'development_id' );
+		return $this->hasMany( 'DevelopmentPhotos', 'development_id' );
 	}
+
+	public function cover()
+	{
+		return $this->hasOne('DevelopmentPhotos', 'id');
+	}
+
 }

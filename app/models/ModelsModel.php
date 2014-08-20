@@ -47,11 +47,6 @@ class ModelsModel extends Model {
 		return $this->eyes;
 	}
 
-	public function cover()
-	{
-		return $this->hasOne('Photos', 'id');
-	}
-
 }
 
 
