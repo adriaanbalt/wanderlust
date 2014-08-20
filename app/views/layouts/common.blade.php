@@ -34,9 +34,6 @@
 	</head>
 	<body>
 		<div id="main" role="main" class=''>
-			@if( Request::segment(1) == '' )
-				@include('partials.intro', array('status'=>'open'))
-			@endif
 			@include('partials.navigation-mobile', array('status'=>'closed'))
 			<div id='content' class='mauve'>
 				@include('partials.logo')
