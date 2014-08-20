@@ -123,12 +123,9 @@ dd {
 }
 
 #navigation nav a {
-	letter-spacing: 3px;
 	color: $nav-color;
 	font-family: abril-fatface, serif;
 	font-weight: normal;
-	letter-spacing: 0.041em;
-	text-align: center;
 	&:hover {
 		color: $nav-hover-color;
 	}

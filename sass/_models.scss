@@ -14,6 +14,15 @@
 				&:hover {
 					img {
 					//	@include opacity( .7 );
+					// saturate([ <number> | <percentage> ])
+
+						-webkit-filter: contrast(2);
+						filter: contrast(2);
+						// -webkit-filter: saturate(2);
+						// filter: saturate(2);
+						// -webkit-filter: grayscale(100%);
+						// filter: grayscale(100%);
+						
 					}
 				}
 				img { 
@@ -22,13 +31,12 @@
 					top: 0;
 				}
 				> div{
-					// position: absolute;
+					position: absolute;
 					z-index: 1;
 					bottom: 6px;
 					width: 100%;
-					margin-bottom: 10px;
 					p {
-						background: #fff;
+						background: $mauve;
 					}
 				}
 			}
