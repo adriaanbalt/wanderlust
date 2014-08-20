@@ -29,7 +29,7 @@ class DevelopmentPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/Ira Karlova_28.jpg',
+					'path' => 'images/models/irina/Ira-Karlova_28.jpg',
 					'development_id' => '1'
 			),
 			array(
@@ -83,7 +83,7 @@ class DevelopmentPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/Ira Karlova_54.jpg',
+					'path' => 'images/models/irina/Ira-Karlova_54.jpg',
 					'development_id' => '3'
 			),
 			array(
@@ -119,7 +119,7 @@ class DevelopmentPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/maria/elle slovenia 03.jpg',
+					'path' => 'images/models/maria/elle-slovenia-03.jpg',
 					'development_id' => '3'
 			),
 			array(

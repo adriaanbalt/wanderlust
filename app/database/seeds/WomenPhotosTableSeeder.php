@@ -11,7 +11,7 @@ class WomenPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/chelsea/0-cover.jpg',
+					'path' => 'images/models/chelsea/IMG_7021R.jpg',
 					'women_id' => '1'
 			),
 			array(
@@ -29,7 +29,7 @@ class WomenPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/Ira Karlova_28.jpg',
+					'path' => 'images/models/irina/Ira-Karlova_28.jpg',
 					'women_id' => '2'
 			),
 			array(
@@ -83,7 +83,7 @@ class WomenPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/irina/Ira Karlova_54.jpg',
+					'path' => 'images/models/irina/Ira-Karlova_54.jpg',
 					'women_id' => '2'
 			),
 			array(
@@ -102,7 +102,7 @@ class WomenPhotosTableSeeder extends Seeder {
 					'title' => '',
 					'slug' => '',
 					'path' => 'images/models/chelsea/545662_287306998036739_643155477_n.jpg',
-					'women_id' => '1'
+					'women_id' => '3'
 			),
 			array(
 					'title' => '',
@@ -119,7 +119,7 @@ class WomenPhotosTableSeeder extends Seeder {
 			array(
 					'title' => '',
 					'slug' => '',
-					'path' => 'images/models/maria/elle slovenia 03.jpg',
+					'path' => 'images/models/maria/elle-slovenia-03.jpg',
 					'women_id' => '3'
 			),
 			array(
