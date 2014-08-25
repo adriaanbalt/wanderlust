@@ -8,7 +8,10 @@
 	// &.gray {
 	// 	background-image: url(../images/records/record-gray.jpg);
 	// }
-	&.mauve {
+	&.cover {
+		background-image: url(../images/records/record-cover.jpg);
+	}
+	&.sleeve {
 		background-image: url(../images/records/sleeve.jpg);
 	}
 	background-attachment: fixed;

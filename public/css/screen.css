@@ -319,7 +319,11 @@ section {
   text-align: center;
 }
 /* line 11, ../../sass/_main.scss */
-#content.mauve {
+#content.cover {
+  background-image: url(../images/records/record-cover.jpg);
+}
+/* line 14, ../../sass/_main.scss */
+#content.sleeve {
   background-image: url(../images/records/sleeve.jpg);
 }
 
