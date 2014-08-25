@@ -7,6 +7,8 @@ class DevelopmentController extends BaseController {
 		$data = DevelopmentPhotosBoard::all();
 
 		$this->layout->content = View::make('templates.site.models')->withData($data);
+
+		$this->layout->with('pageType', 'cover');
 	}
 
 	public function details( $id )
@@ -23,6 +25,8 @@ class DevelopmentController extends BaseController {
 		$shoes = Development::where( 'slug', '=', $id )->firstOrFail()->shoes;
 
 		$this->layout->content = View::make('templates.site.details')->with( 'photos', $photos)->with('name', $name )->with('height', $height )->with('bust', $bust )->with('hips', $hips )->with('waist', $waist )->with('eyes', $eyes )->with('hair', $hair )->with('shoes', $shoes );
+
+		$this->layout->with('pageType', 'sleeve');
 	}
 
 }

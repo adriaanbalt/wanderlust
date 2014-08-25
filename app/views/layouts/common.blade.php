@@ -36,7 +36,7 @@
 	<body>
 		<div id="main" role="main" class=''>
 			@include('partials.navigation-mobile', array('status'=>'closed'))
-			<div id='content' class='mauve'>
+			<div id='content' class='{{ $pageType }}'>
 				@include('partials.logo')
 				@include('partials.navigation', array('status'=>'closed'))
 				@yield('content')

@@ -6,6 +6,7 @@ class AboutController extends BaseController {
 	{
 		$data = AboutModel::all();
 		$this->layout->content = View::make('templates.site.about')->withData($data);
+		$this->layout->with('pageType', 'sleeve');
 	}
 
 }

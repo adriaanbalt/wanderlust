@@ -6,6 +6,7 @@ class ContactController extends BaseController {
 	{
 		$data = ContactModel::all();
 		$this->layout->content = View::make('templates.site.contact')->withData($data);
+		$this->layout->with('pageType', 'sleeve');
 	}
 
 }
