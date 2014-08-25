@@ -25,6 +25,7 @@
 
 		<link href="{{ url('css/screen.css') }}" rel="stylesheet" />
 		<link href="{{ url('css/selectize.bootstrap3.css') }}" rel="stylesheet">
+		<link href="{{ url('http://fonts.googleapis.com/css?family=Abel|PT+Sans+Narrow:400,700') }}" rel='stylesheet' type='text/css'>
 
 		<script src="//use.edgefonts.net/abril-fatface:n4,i4.js"></script>
  

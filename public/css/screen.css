@@ -309,7 +309,8 @@ section {
 
 /* line 1, ../../sass/_main.scss */
 #content {
-  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
   background-position: top left;
   background-color: #FFF;
   min-height: 100%;
@@ -489,70 +490,74 @@ section {
 }
 /* line 9, ../../sass/_models.scss */
 #models ul li a {
+  margin: 2em 1em;
   position: relative;
   display: block;
   padding: 3px;
-  -webkit-transition: opacity 0.2s ease-in 0;
-  -moz-transition: opacity 0.2s ease-in 0;
-  -o-transition: opacity 0.2s ease-in 0;
-  transition: opacity 0.2s ease-in 0;
 }
-/* line 15, ../../sass/_models.scss */
+/* line 14, ../../sass/_models.scss */
+#models ul li a img {
+  -webkit-transition: all 0.1s ease-in 0;
+  -moz-transition: all 0.1s ease-in 0;
+  -o-transition: all 0.1s ease-in 0;
+  transition: all 0.1s ease-in 0;
+}
+/* line 18, ../../sass/_models.scss */
 #models ul li a:hover img {
   -webkit-filter: contrast(2);
   filter: contrast(2);
 }
-/* line 28, ../../sass/_models.scss */
+/* line 31, ../../sass/_models.scss */
 #models ul li a img {
   width: 100%;
   z-index: 0;
   top: 0;
 }
-/* line 33, ../../sass/_models.scss */
+/* line 36, ../../sass/_models.scss */
 #models ul li a > div {
   position: absolute;
   z-index: 1;
   bottom: 6px;
   width: 100%;
 }
-/* line 38, ../../sass/_models.scss */
+/* line 41, ../../sass/_models.scss */
 #models ul li a > div p {
   background: #e6b19f;
 }
 
 /* Again, you're free to use and define the classes: */
-/* line 48, ../../sass/_models.scss */
+/* line 51, ../../sass/_models.scss */
 .column {
   float: left;
 }
 
-/* line 49, ../../sass/_models.scss */
+/* line 52, ../../sass/_models.scss */
 .size-1of1 {
   width: 100%;
 }
 
-/* line 50, ../../sass/_models.scss */
+/* line 53, ../../sass/_models.scss */
 .size-1of2 {
   width: 50%;
 }
 
-/* line 51, ../../sass/_models.scss */
+/* line 54, ../../sass/_models.scss */
 .size-1of3 {
   width: 33.333%;
 }
 
-/* line 52, ../../sass/_models.scss */
+/* line 55, ../../sass/_models.scss */
 .size-1of4 {
   width: 25%;
 }
 
-/* line 53, ../../sass/_models.scss */
+/* line 56, ../../sass/_models.scss */
 .size-1of5 {
   width: 20%;
 }
 
 /* Also, don't forget to add this: */
-/* line 57, ../../sass/_models.scss */
+/* line 60, ../../sass/_models.scss */
 [data-columns]::before {
   position: absolute;
   right: 9999em;
@@ -561,31 +566,31 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 66, ../../sass/_models.scss */
+  /* line 69, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '1 .column.size-1of1';
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 71, ../../sass/_models.scss */
+  /* line 74, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '2 .column.size-1of2';
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 76, ../../sass/_models.scss */
+  /* line 79, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '3 .column.size-1of3';
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1224px) {
-  /* line 81, ../../sass/_models.scss */
+  /* line 84, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '4 .column.size-1of4';
   }
 }
 @media screen and (min-width: 1224px) {
-  /* line 86, ../../sass/_models.scss */
+  /* line 89, ../../sass/_models.scss */
   #grid[data-columns]::before {
     content: '5 .column.size-1of5';
   }
