@@ -13,8 +13,8 @@ class NavigationTableSeeder extends Seeder {
 					'slug'  => 'women'
 			),
 			array(
-					'title' => 'rookies',
-					'slug'  => 'rookies'
+					'title' => 'new faces',
+					'slug'  => 'new-faces'
 			),
 			array(
 					'title' => 'backstage',

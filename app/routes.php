@@ -7,7 +7,7 @@
 Route::get('/', 'WomenController@index');
 Route::get('/women', 'WomenController@index');
 Route::get('/women/{id}', 'WomenController@details');
-Route::get('/rookies', 'DevelopmentController@index');
-Route::get('/rookies/{id}', 'DevelopmentController@details');
+Route::get('/new-faces', 'DevelopmentController@index');
+Route::get('/new-faces/{id}', 'DevelopmentController@details');
 Route::get('/backstage', 'AboutController@index');
 Route::get('/join', 'JoinController@index');
