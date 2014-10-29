@@ -1,17 +1,17 @@
 <?php
 
-class Development extends ModelsModel {
+class Artists extends ModelsModel {
 
-	protected $table = 'development';
+	protected $table = 'artists';
 
 	public function photos()
 	{
-		return $this->hasMany( 'DevelopmentPhotos', 'development_id' );
+		return $this->hasMany( 'ArtistsPhotos', 'artists_id' );
 	}
 
 	public function cover()
 	{
-		return $this->hasOne('DevelopmentPhotos', 'id');
+		return $this->hasOne('ArtistsPhotos', 'id');
 	}
 
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateDevelopmentTable extends Migration {
+class CreateArtistsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateDevelopmentTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('development', function(Blueprint $table) {
+		Schema::create('artists', function(Blueprint $table) {
 			$table->engine ='InnoDB';
 
 			$table->increments('id');
@@ -32,7 +32,7 @@ class CreateDevelopmentTable extends Migration {
 			$table->integer('photocover_id')->unsigned()->nullable();
 			$table->foreign('photocover_id')
 				->references('id')
-				->on('development_photos')
+				->on('artists_photos')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
@@ -47,7 +47,7 @@ class CreateDevelopmentTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('development');
+		Schema::drop('artists');
 	}
 
 }

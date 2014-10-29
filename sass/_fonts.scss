@@ -1,3 +1,4 @@
+
 // @font-face {
 //   font-family: 'Marcellus';
 //   font-style: normal;
@@ -51,17 +52,16 @@ body {
 }
 
 h1 {
-	font-family: "trajan-pro-3", "Garamond", "Georgia", serif;
+	font-family: $font-serif;
 	font-weight: normal;
 	font-weight: 400;
-	font-size: 96px;
-	text-align: center;
+	font-size: 4.5em;
 	color: $h1-color;
-	letter-spacing: 18px;
+	letter-spacing: 0;
 }
 
 h2 {
-	font-family: "Garamond", "Georgia", serif;
+	font-family: $font-serif;
 	font-weight: 400;
 	font-size: 40px;
 	letter-spacing: 2px;
@@ -72,7 +72,6 @@ h2 {
 
 h3 {
 	font-weight: normal;
-	text-align: center;
 	color: $h3-color;
 	line-height: 48px;
 	font-size: 36px;
@@ -86,7 +85,6 @@ h4 {
 	font-size: 72px;
 	letter-spacing: 12px;
 	color: $h4-color;
-	text-align: center;
 }   
 
 h5 {
@@ -99,7 +97,6 @@ h5 {
 
 h6 {
 	font-weight: normal;
-	text-align: center;
 	font-size: 24px;
 	color: $h6-color;
 	letter-spacing: 5px;
@@ -110,56 +107,31 @@ h6 {
 
 dt {
 	font-weight: normal;
-	text-align: center;
 	font-size: 72px;
 	color: $dt-color;
 }
 
 dd {
 	font-weight: normal;
-	text-align: center;
 	font-size: 18px;
 	color: $dd-color;
-}
-
-#navigation nav a {
-	color: $nav-color;
-	font-family: abril-fatface, serif;
-	font-weight: normal;
-	&:hover {
-		color: $nav-hover-color;
-	}
-}
-
-#navigation-mobile nav a {
-	letter-spacing: 3px;
-	color: $nav-mobile-color;
-	font-family: abril-fatface, serif;
-	font-weight: normal;
-	letter-spacing: 0.041em;
-	text-align: center;
-	&:hover {
-		color: $nav-hover-color;
-	}
 }
 
 p {
 	color: $p-color;
 	font-weight: normal;
-	font-size: 21px;
-	letter-spacing: 0.041em;
-	line-height: 1.25em;
-	padding: 0 1em;
+	font-size: 20px;
+	letter-spacing: 0;
 }
 
 i {
-	font-family:"ProximaRegular";
+	font-family: $font-sans;
 	font-weight: normal;
 	font-style: italic;
 }
 
 b, strong {
-	font-family: 'ProximaExtraBold';
+	font-family: $font-sans;
 	font-weight: normal;
 	color: #1f1f1f;
 }

@@ -10,7 +10,7 @@ class AboutTableSeeder extends Seeder {
 		$array = array(
 			array(
 					'title' => '',
-					'paragraph' => "Chad Gavery's 11 year experience began at ONE Management New york where he focused on model development contributing to the rise of such super stars as Candice Swanepoel, Anne V. and Irina Shayk. His years spent at NEXT Paris as well as casting for the fashion shows in London, Milan and Paris, bring to WANDERLUST an insider exposure to expand a models career from international placement and management to connecting talent with top photographers, clients and industry taste makers."
+					'paragraph' => "Chad Gavery's 11 year experience began at ONE Management New york where he focused on model artists contributing to the rise of such super stars as Candice Swanepoel, Anne V. and Irina Shayk. His years spent at NEXT Paris as well as casting for the fashion shows in London, Milan and Paris, bring to WANDERLUST an insider exposure to expand a models career from international placement and management to connecting talent with top photographers, clients and industry taste makers."
 			),
 			array(
 					'title' => '',

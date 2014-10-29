@@ -7,27 +7,28 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<title>WANDERLUST</title>
+		<title>THE SOURCE MANAGEMENT</title>
 		
-		<meta name="title" content="WANDERLUST" />
-		<meta name="description" content="WANDERLUST is a modelling agency representing great talent" />
-		<link rel="canonical" href="http://www.WANDERLUSTMGMT.com" />
+		<meta name="title" content="THE SOURCE MANAGEMENT" />
+		<meta name="description" content="THE SOURCE MANAGEMENT is a modelling agency representing talent from around the world" />
+		<link rel="canonical" href="http://www.THESOURCEMGMT.com" />
 		
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
 		<link rel="shortcut icon" href="./favicon.ico" >
 
-		<meta property="og:title" content="WANDERLUST"/>
+		<meta property="og:title" content="THE SOURCE MANAGEMENT"/>
 		<meta property="og:type" content=""/>
-		<meta property="og:url" content="www.WANDERLUSTMGMT.com"/>
+		<meta property="og:url" content="www.thesourcemgmt.com"/>
 		<meta property="og:image" content=""/>
-		<meta property="og:site_name" content="WANDERLUST"/>
-		<meta property="og:description" content="WANDERLUST is a modelling agency representing great talent"/>
+		<meta property="og:site_name" content="THE SOURCE MANAGEMENT"/>
+		<meta property="og:description" content="THE SOURCE MANAGEMENT is a modelling agency representing talent from around the world"/>
 
 		<link href="{{ url('css/screen.css') }}" rel="stylesheet" />
 		<link href="{{ url('css/selectize.bootstrap3.css') }}" rel="stylesheet">
 		<link href="{{ url('http://fonts.googleapis.com/css?family=Abel|PT+Sans+Narrow:400,700') }}" rel='stylesheet' type='text/css'>
 
 		<script src="//use.edgefonts.net/abril-fatface:n4,i4.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
  
 		<!--[if IE]><link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -40,7 +41,6 @@
 				@include('partials.logo')
 				@include('partials.navigation', array('status'=>'closed'))
 				@yield('content')
-				@include('partials.definition')
 				@include('partials.footer')
 			</div>
 		</div>
@@ -53,12 +53,13 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-###-1', 'wanderlustmgmt.com');
+			ga('create', 'UA-###-1', 'thesourcemgmt.com');
 			ga('send', 'pageview');
 		</script>
 
 		<!-- JAVASCRIPT -->
 		<script type="text/javascript">var root = '{{url("/")}}';</script>
+		
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>

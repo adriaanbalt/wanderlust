@@ -1,16 +1,16 @@
 <?php
 
-class DevelopmentPhotosBoard extends Model {
+class ArtistsPhotosBoard extends Model {
 
-	protected $table = 'development_photos_board';
+	protected $table = 'artists_photos_board';
 
 	public function model()
 	{
-		return $this->hasOne('Development', 'id', 'development_id');
+		return $this->hasOne('Artists', 'id', 'artists_id');
 	}
 
 	public function cover()
 	{
-		return $this->hasOne('DevelopmentPhotos', 'id', 'photo_id');
+		return $this->hasOne('ArtistsPhotos', 'id', 'photo_id');
 	}
 }

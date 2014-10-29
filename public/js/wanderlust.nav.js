@@ -31,37 +31,54 @@ WANDERLUST.Nav = (function(WANDERLUST, window, undefined){
 	_initialize = function() {
 		console.log ( 'WANDERLUST.Nav.initialize' );
 
-		$navigation = $('#navigation-mobile');
-		$nav = $('#navigation-mobile .container');
-		$menuBlack = $('#navigation-mobile .menu.black');
-		$menuWhite = $('#navigation-mobile .menu.white');
+		// $navigation = $('#navigation-mobile');
+		// $nav = $('#navigation-mobile .container');
+		// $menuBlack = $('#navigation-mobile .menu.black');
+		// $menuWhite = $('#navigation-mobile .menu.white');
 
-		$menuBlack.on('click', toggleNav );
-		$menuWhite.on('click', toggleNav );
+		// $menuBlack.on('click', toggleNav );
+		// $menuWhite.on('click', toggleNav );
 
-		// subscribe to the resize
-		resize();
-		this.resize_uid = RwdResize.subscribe(resize, this);
-		console.log ( 'this.resize_uid: ', this.resize_uid );
+		// // subscribe to the resize
+		// resize();
+		// this.resize_uid = RwdResize.subscribe(resize, this);
+		// console.log ( 'this.resize_uid: ', this.resize_uid );
+
+		$window = $(window);
+		$nav = $('#navigation');
+		$window.scroll( scrolling );
+
+		// prevent bootstrap from executing twice
+		self.initialized = true;
+	
+	},
+
+	scrolling = function() {
+		var stop = $window.scrollTop();
+		if ( stop >= 250 ) {
+			$nav.addClass('fixed');
+		} else {
+			$nav.removeClass('fixed');
+		}
 	},
 
 	toggleNav = function() {
-		config.navActive = !config.navActive;
-		if ( config.navActive ) {
-			_gaq.push(['_trackEvent', 'Nav opened']);
-			$navigation.addClass( 'open' );
-			$nav.clearQueue().animate({
-				'opacity':1
-			}, 150, function() {
-			});
+		// config.navActive = !config.navActive;
+		// if ( config.navActive ) {
+		// 	_gaq.push(['_trackEvent', 'Nav opened']);
+		// 	$navigation.addClass( 'open' );
+		// 	$nav.clearQueue().animate({
+		// 		'opacity':1
+		// 	}, 150, function() {
+		// 	});
 
-		} else {
-			$nav.clearQueue().animate({
-				'opacity':0
-			}, 150, function() {
-				$navigation.removeClass( 'open' );
-			});
-		}
+		// } else {
+		// 	$nav.clearQueue().animate({
+		// 		'opacity':0
+		// 	}, 150, function() {
+		// 		$navigation.removeClass( 'open' );
+		// 	});
+		// }
 	},
 
 	resize = function() {

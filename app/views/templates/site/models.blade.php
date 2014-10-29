@@ -3,12 +3,15 @@
 	<ul id='grid' class='clearfix' data-columns>
 @foreach( $data as $item )
 		<li>
-			<a href="{{ Request::segment(1) }}/{{ $item->model->slug }}">
-				<img src="{{ URL::asset( $item->cover->path ) }}"/>
-				<div>
-					<div class='valign'></div>
+			<a href="{{ $pageName }}/{{ $item->model->slug }}">
+				<div class='hover'>
+					<span class='valign'></span>
 					<p class='vcontent'>{{ $item->model->name }}</p>
 				</div>
+				<div class='img-container'>
+					<img src="{{ URL::asset( $item->cover->path ) }}"/>
+				</div>
+				<p class='name'>{{ $item->model->name }}</p>
 			</a>
 		</li>
 @endforeach

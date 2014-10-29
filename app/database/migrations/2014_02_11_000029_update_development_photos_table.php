@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateDevelopmentPhotosTable extends Migration {
+class UpdateArtistsPhotosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class UpdateDevelopmentPhotosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('development_photos', function(Blueprint $table)
+		Schema::table('artists_photos', function(Blueprint $table)
 		{
-			$table->integer('development_id')->unsigned()->nullable();
-			$table->foreign('development_id')
+			$table->integer('artists_id')->unsigned()->nullable();
+			$table->foreign('artists_id')
 				->references('id')
-				->on('development')
+				->on('artists')
 				->on_delete('restrict')
 				->on_update('cascade');
 		});

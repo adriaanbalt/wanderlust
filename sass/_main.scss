@@ -8,19 +8,19 @@
 	// &.gray {
 	// 	background-image: url(../images/records/record-gray.jpg);
 	// }
-	&.cover {
-		background-image: url(../images/records/record-cover.jpg);
-	}
-	&.sleeve {
-		background-image: url(../images/records/sleeve.jpg);
-	}
+	// &.cover {
+	// 	background-image: url(../images/records/record-cover.jpg);
+	// }
+	// &.sleeve {
+	// 	background-image: url(../images/records/sleeve.jpg);
+	// }
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top left;
-	background-color: #FFF;
+	background-color: $background;
 	// background-repeat: no-repeat;
 	min-height: 100%;
 	position: absolute;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }

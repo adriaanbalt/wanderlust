@@ -5,9 +5,18 @@ class WomenController extends BaseController {
 	public function index()
 	{
 		$data = WomenPhotosBoard::all();
-		// $o = WomenPhotosBoard::find(4)->cover->path;
-		// debug ( $o );
-		$this->layout->content = View::make('templates.site.models')->withData($data);
+		
+		$this->layout->content = View::make('templates.site.models')->withData($data)->with('pageName', 'women');
+
+		$this->layout->with('pageType', 'cover');
+	}
+
+	public function category( $categoryID )
+	{
+		// build the page based on the category
+		$data = WomenPhotosBoard::all();
+		
+		$this->layout->content = View::make('templates.site.models')->withData($data)->with('pageName', 'women');
 
 		$this->layout->with('pageType', 'cover');
 	}

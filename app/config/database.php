@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'     => 'mysql.balt.us',
-			'database' => 'wanderlust_db',
-			'username' => 'wanderlust_db',
-			'password' => 'Wander1',
+			'host'     => 'mysql.thesourcemgmt.com',
+			'database' => 'source_website_db',
+			'username' => 'chadgavery',
+			'password' => 'P4ris4life',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci', 
 			'prefix'    => '',

@@ -31,6 +31,8 @@ window.WANDERLUST = (function(self, window, undefined){
 			console.log = function() {};
 			console.error = function() {};
 		}
+
+
 		
 		console.log('WANDERLUST.initialize');
 

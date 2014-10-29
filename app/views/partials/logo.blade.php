@@ -1,1 +1,3 @@
-<img class='logo' src="{{ URL::asset( 'images/logo-black.svg' ) }}"/>
+<div class='logo'>
+	<h1><span>THE</span><span>SOURCE</span><span>MANAGEMENT</span></h1>
+</div>
