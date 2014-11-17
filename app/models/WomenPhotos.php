@@ -1,17 +1,17 @@
 <?php
 
-class WomenPhotos extends Model {
+class ImagePhotos extends Model {
 
-	protected $table = 'women_photos';
+	protected $table = 'image_photos';
 
 	public function cover()
 	{
-		return $this->belongsTo('ModelsModel','women_id','photocover_id');
+		return $this->belongsTo('ModelsModel','image_id','photocover_id');
 	}
 
 	public function model()
 	{
-		return $this->belongsTo('Women','women_id');
+		return $this->belongsTo('Image','image_id');
 	}
 
 	public function path()

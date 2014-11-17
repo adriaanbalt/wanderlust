@@ -1,11 +1,11 @@
 <?php
 
-class ArtistsTableSeeder extends Seeder {
+class DevelopmentTableSeeder extends Seeder {
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
-		DB::table('artists')->delete();
+		DB::table('development')->delete();
 
 		$array = array(
 
@@ -50,7 +50,7 @@ class ArtistsTableSeeder extends Seeder {
 		);
 
 		
-		DB::table('artists')->insert($array);
+		DB::table('development')->insert($array);
 	}
 
 }

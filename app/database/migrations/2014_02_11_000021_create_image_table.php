@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateWomenTable extends Migration {
+class CreateImageTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateWomenTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('women', function(Blueprint $table) {
+		Schema::create('image', function(Blueprint $table) {
 			$table->engine ='InnoDB';
 
 			$table->increments('id');
@@ -32,7 +32,7 @@ class CreateWomenTable extends Migration {
 			$table->integer('photocover_id')->unsigned()->nullable();
 			$table->foreign('photocover_id')
 				->references('id')
-				->on('women_photos')
+				->on('image_photos')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
@@ -47,7 +47,7 @@ class CreateWomenTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('women');
+		Schema::drop('image');
 	}
 
 }

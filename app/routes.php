@@ -5,13 +5,13 @@
 // });
 
 
-Route::get('/', 'WomenController@index');
+Route::get('/', 'ModelsController@index');
 
-Route::get('/models', 'WomenController@index');
-Route::get('/models/{category}', 'WomenController@category');
-Route::get('/models/image/{id}', 'WomenController@details');
-Route::get('/models/commercial/{id}', 'WomenController@details');
-Route::get('/models/develop/{id}', 'WomenController@details');
+Route::get('/models', 'ModelsController@index');
+Route::get('/models/{category}', 'ModelsController@category');
+Route::get('/models/image/{id}', 'ModelsController@details');
+Route::get('/models/commercial/{id}', 'ModelsController@details');
+Route::get('/models/develop/{id}', 'ModelsController@details');
 
 Route::get('/artists', 'ArtistController@index');
 Route::get('/artists/{category}', 'ArtistController@category');

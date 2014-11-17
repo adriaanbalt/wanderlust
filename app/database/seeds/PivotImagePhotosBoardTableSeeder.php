@@ -1,98 +1,98 @@
 <?php
 
-class PivotWomenPhotosBoardTableSeeder extends Seeder {
+class PivotImagePhotosBoardTableSeeder extends Seeder {
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
-		DB::table('women_photos_board')->delete();
+		DB::table('image_photos_board')->delete();
 
 		$array = array(
 			array(
 					'photo_id' => '1',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '2',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '3',
-					'women_id' => '3'
+					'image_id' => '3'
 			),
 			array(
 					'photo_id' => '4',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '5',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '6',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '7',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '8',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '9',
-					'women_id' => '3'
+					'image_id' => '3'
 			),
 			array(
 					'photo_id' => '12',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '13',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '14',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '15',
-					'women_id' => '3'
+					'image_id' => '3'
 			),
 			array(
 					'photo_id' => '16',
-					'women_id' => '3'
+					'image_id' => '3'
 			),
 			array(
 					'photo_id' => '17',
-					'women_id' => '2'
+					'image_id' => '2'
 			),
 			array(
 					'photo_id' => '18',
-					'women_id' => '1'
+					'image_id' => '1'
 			),
 			array(
 					'photo_id' => '19',
-					'women_id' => '3'
+					'image_id' => '3'
 			),
 			array(
 					'photo_id' => '20',
-					'women_id' => '1'
+					'image_id' => '1'
 			)
 		);
 
 		
-		DB::table('women_photos_board')->insert($array);
+		DB::table('image_photos_board')->insert($array);
 	}
 
 }
 
 
 /*
-	$table->foreign('women_id')
+	$table->foreign('image_id')
 		->references('id')
-		->on('women')
+		->on('image')
 		->on_delete('restrict')
 		->on_update('cascade');
 	

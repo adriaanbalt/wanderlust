@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePivotArtistsPhotosTable extends Migration {
+class CreatePivotDevelopmentPhotosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,23 +12,23 @@ class CreatePivotArtistsPhotosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('artists_photos_board', function(Blueprint $table)
+		Schema::create('development_photos_board', function(Blueprint $table)
 		{
 	        $table->engine ='InnoDB';
 
 			$table->increments('id');
 			
-			$table->integer('artists_id')->unsigned()->nullable();
-			$table->foreign('artists_id')
+			$table->integer('development_id')->unsigned()->nullable();
+			$table->foreign('development_id')
 				->references('id')
-				->on('artists')
+				->on('development')
 				->on_delete('restrict')
 				->on_update('cascade');
 			
 			$table->integer('photo_id')->unsigned()->nullable();
 			$table->foreign('photo_id')
 				->references('id')
-				->on('artists_photos')
+				->on('development_photos')
 				->on_delete('restrict')
 				->on_update('cascade');
 
@@ -43,7 +43,7 @@ class CreatePivotArtistsPhotosTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('artists_photos_board');
+		Schema::drop('development_photos_board');
 	}
 
 }

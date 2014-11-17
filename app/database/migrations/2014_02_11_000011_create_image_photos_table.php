@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWomenPhotosTable extends Migration {
+class CreateImagePhotosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateWomenPhotosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('women_photos', function(Blueprint $table)
+		Schema::create('image_photos', function(Blueprint $table)
 		{
 			$table->engine ='InnoDB';
 

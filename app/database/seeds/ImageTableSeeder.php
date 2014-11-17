@@ -1,11 +1,11 @@
 <?php
 
-class WomenTableSeeder extends Seeder {
+class ImageTableSeeder extends Seeder {
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
-		DB::table('women')->delete();
+		DB::table('image')->delete();
 
 		$array = array(
 			array(
@@ -49,7 +49,7 @@ class WomenTableSeeder extends Seeder {
 		);
 
 		
-		DB::table('women')->insert($array);
+		DB::table('image')->insert($array);
 	}
 
 }
