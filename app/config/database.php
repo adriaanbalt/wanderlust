@@ -57,7 +57,7 @@ return array(
 			'host'     => 'mysql.thesourcemgmt.com',
 			'database' => 'source_website_db',
 			'username' => 'chadgavery',
-			'password' => 'P4ris4life',
+			'password' => 'S0urc3mgmt',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci', 
 			'prefix'    => '',
