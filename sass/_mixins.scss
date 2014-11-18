@@ -28,9 +28,9 @@ $vendors: webkit, moz, ms, o;
 // Opacity
 // ==========================================================================
 @mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
 }
 
 
@@ -77,4 +77,20 @@ $vendors: webkit, moz, ms, o;
 	-webkit-animation-iteration-count: $iterationCount;
 	-webkit-animation-direction: $direction;
 	-webkit-animation-play-state: $playState;
+}
+
+@mixin transition( $prop, $duration, $ease, $delay: 0 ) {
+	-webkit-transition: $prop $duration $ease $delay;
+	-moz-transition: $prop $duration $ease $delay;
+	-o-transition: $prop $duration $ease $delay;
+	transition: $prop $duration $ease $delay;
+}
+
+@mixin column-width( $width ) {
+	column-width: $width;
+	-webkit-column-width: $width;
+	-moz-column-width: $width;
+	// -webkit-column-gap:   20px;  
+	// -moz-column-gap:      20px;
+	// column-gap:           20px;
 }

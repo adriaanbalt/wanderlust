@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="us-en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="us-en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="us-en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="us-en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<title>THE SOURCE MANAGEMENT</title>
+		
+		<meta name="title" content="THE SOURCE MANAGEMENT" />
+		<meta name="description" content="THE SOURCE MANAGEMENT is a modelling agency representing talent from around the world" />
+		<link rel="canonical" href="http://www.THESOURCEMGMT.com" />
+		
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
+		<link rel="shortcut icon" href="./favicon.ico" >
+
+		<meta property="og:title" content="THE SOURCE MANAGEMENT"/>
+		<meta property="og:type" content=""/>
+		<meta property="og:url" content="www.thesourcemgmt.com"/>
+		<meta property="og:image" content=""/>
+		<meta property="og:site_name" content="THE SOURCE MANAGEMENT"/>
+		<meta property="og:description" content="THE SOURCE MANAGEMENT is a modelling agency representing talent from around the world"/>
+
+		<link href="{{ url('css/screen.css') }}" rel="stylesheet" />
+		<link href="{{ url('css/selectize.bootstrap3.css') }}" rel="stylesheet">
+		<link href="{{ url('http://fonts.googleapis.com/css?family=Abel|PT+Sans+Narrow:400,700') }}" rel='stylesheet' type='text/css'>
+
+		<script src="//use.edgefonts.net/abril-fatface:n4,i4.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+ 
+		<!--[if IE]><link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
+
+		<script src="{{ url('js/libs/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
+	</head>
+	<body>
+		<div id="main" role="main" class=''>
+			@include('partials.navigation-mobile', array('status'=>'closed'))
+			<div id='content' class='{{ $pageType }}'>
+				@include('partials.logo')
+				@include('partials.navigation', array('status'=>'closed'))
+				@yield('content')
+				@include('partials.footer')
+			</div>
+		</div>
+		<!-- /#main -->
+
+		<!-- Add your own Google Analytics UA number or remove this snippet -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-###-1', 'thesourcemgmt.com');
+			ga('send', 'pageview');
+		</script>
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript">var root = '{{url("/")}}';</script>
+		
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+
+		<script src="{{ url('js/libs/salvattore.min.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/libs/selectize.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/libs/pubSub.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/libs/rwdResize.js') }}" type="text/javascript"></script>
+
+		<script src="{{ url('js/wanderlust.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.intro.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.details.js') }}" type="text/javascript"></script>
+		<script src="{{ url('js/wanderlust.nav.js') }}" type="text/javascript"></script>
+
+	</body>
+</html>

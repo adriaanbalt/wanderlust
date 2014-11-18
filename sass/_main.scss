@@ -1,21 +1,26 @@
 #content{
-	&.pink {
-		background-image: url(../img/record-pink.jpg);
-		.logo {
-			background-image: url(../img/logo-pink.svg);
-		}
-	}
-	&.black {
-		background-image: url(../img/record-black.jpg);
-		.logo {
-			background-image: url(../img/logo-black.svg);
-		}
-	}
+	// &.pink {
+	// 	background-image: url(../images/records/record-pink.jpg);
+	// }
+	// // &.black {
+	// 	background-image: url(../images/records/record-black.jpg);
+	// // }
+	// &.gray {
+	// 	background-image: url(../images/records/record-gray.jpg);
+	// }
+	// &.cover {
+	// 	background-image: url(../images/records/record-cover.jpg);
+	// }
+	// &.sleeve {
+	// 	background-image: url(../images/records/sleeve.jpg);
+	// }
+	background-attachment: fixed;
 	background-size: cover;
-	background-position: center center;
-	background-color: #010203;
-	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: $background;
+	// background-repeat: no-repeat;
 	min-height: 100%;
 	position: absolute;
 	width: 100%;
+	text-align: left;
 }
