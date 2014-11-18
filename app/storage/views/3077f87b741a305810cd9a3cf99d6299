@@ -1,0 +1,10 @@
+<div id='navigation' class='<?php echo $status; ?>'>
+	<nav>
+<?php foreach( $navigation as $item ): ?>
+		<a href="/wanderlust/<?php echo $item['slug']; ?>" class=''>
+			<div class='valign'></div>
+			<div class='item vcontent'><?php echo $item['title']; ?></div>
+		</a>
+<?php endforeach; ?>
+	</nav>
+</div>

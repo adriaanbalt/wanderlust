@@ -1,0 +1,19 @@
+<div id='navigation-mobile' class='<?php echo $status; ?>'>
+	<a class='menu black' href='javascript:void(0);'></a>
+	<a class='menu white' href='javascript:void(0);'></a>
+	<div class='container'>
+		<nav>
+<?php foreach( $navigation as $item ): ?>
+			<a href="/<?php echo $item['slug']; ?>" class=''>
+				<div class='valign'></div>
+				<div class='item vcontent'><?php echo $item['title']; ?></div>
+			</a>
+<?php endforeach; ?>
+		</nav>
+	</div>
+	<!--
+	<div>
+		<select id="searchbox" name="q" placeholder="Search products or categories..." class="form-control"></select>
+	</div>
+	-->
+</div>

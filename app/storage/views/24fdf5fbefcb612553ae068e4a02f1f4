@@ -1,0 +1,27 @@
+<?php $__env->startSection('content'); ?>
+<div id='content' class='mauve'>
+<?php echo $__env->make('partials.logo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('partials.navigation', array('status'=>'closed'), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div id='contact'>
+<?php foreach( $data as $item ): ?>
+	<div>
+		<p><?php echo $item->name; ?></p>
+		<p><?php echo $item->address; ?></p>
+		<p>
+			<a href='tel:<?php echo $item->telephone; ?>'><?php echo $item->telephone; ?></a>
+		</p>
+		<p>
+			<a href='tel:<?php echo $item->telephone; ?>'><?php echo $item->fax; ?></a>
+		</p>
+		<p>
+			<a href='mailto:<?php echo $item->email; ?>'><?php echo $item->email; ?></a>
+		</p>
+	</div>
+<?php endforeach; ?>
+</div>
+
+<?php echo $__env->make('partials.definition', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</div>
+<?php $__env->stopSection(); ?>

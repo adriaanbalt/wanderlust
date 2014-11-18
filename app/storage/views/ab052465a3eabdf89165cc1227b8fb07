@@ -1,0 +1,14 @@
+<?php $__env->startSection('content'); ?>
+<div id='models'>
+	<ul id='grid' data-columns>
+<?php foreach( $data as $item ): ?>
+		<li>
+			<a href="development/<?php echo $item['slug']; ?>">
+				<img src="<?php echo URL::asset( $item->cover->path ); ?>"/>
+				<p><?php echo $item['name']; ?></p>
+			</a>
+		</li>
+<?php endforeach; ?>
+	</ul>
+</div>
+<?php $__env->stopSection(); ?>

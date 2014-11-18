@@ -1,0 +1,5 @@
+<div id='definition'>
+<?php foreach( $data as $item ): ?>
+	<p><?php echo $item['row']; ?></p>
+<?php endforeach; ?>
+</div>

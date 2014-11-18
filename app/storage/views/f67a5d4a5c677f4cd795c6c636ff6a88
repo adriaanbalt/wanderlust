@@ -1,0 +1,15 @@
+<footer>
+	<p class='telephone'>
+		<a href='tel:<?php echo $data->telephone; ?>'><?php echo $data->telephone; ?></a>
+	</p>
+	<p class='fax'>
+		<a href='tel:<?php echo $data->telephone; ?>'><?php echo $data->fax; ?></a>
+	</p>
+	<p class='email'>
+		<a href='mailto:<?php echo $data->email; ?>'><?php echo $data->email; ?></a>
+	</p>
+	<p><?php echo date("Y"); ?></p>
+	<p class='balt'>
+		<a href='http://balt.us' target='_blank'>website by BALT<!--<img src="<?php echo URL::asset( 'images/BALT.svg' ); ?>"/>--></a>
+	</p>
+</footer>

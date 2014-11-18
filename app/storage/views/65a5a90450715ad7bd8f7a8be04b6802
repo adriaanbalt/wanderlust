@@ -1,0 +1,11 @@
+<?php $__env->startSection('content'); ?>
+<div id='about'>
+	<ul>
+<?php foreach( $data as $item ): ?>
+		<li>
+			<p><?php echo $item['paragraph']; ?></p>
+		</li>
+<?php endforeach; ?>
+	</ul>
+</div>
+<?php $__env->stopSection(); ?>

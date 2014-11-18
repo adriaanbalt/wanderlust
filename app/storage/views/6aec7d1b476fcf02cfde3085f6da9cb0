@@ -1,0 +1,36 @@
+<?php $__env->startSection('content'); ?>
+<div id='details'>
+	<h2><?php echo $name; ?></h2>
+	<div class='stats'>
+		<p>Height: <span><?php echo $height; ?></span></p>
+		<p>Bust: <span><?php echo $bust; ?></span></p>
+		<p>Hips: <span><?php echo $hips; ?></span></p>
+		<p>Waist: <span><?php echo $waist; ?></span></p>
+		<p>Eyes: <span><?php echo $eyes; ?></span></p>
+		<p>Hair: <span><?php echo $hair; ?></span></p>
+		<p>Shoes: <span><?php echo $shoes; ?></span></p>
+	</div>
+	<ul>
+<?php
+	$index = 0;
+?>
+<?php foreach( $photos as $item ): ?>
+	<?php if ($index%2 == 0 && $index == 0): ?>
+		<li class='clearfix'>
+			<div class='empty'></div>
+	<?php elseif ($index%2 == 0): ?>
+		<li class='clearfix hidden'>
+			<a class='previousBtn' href='javascript:void(0);'>
+				<img src="<?php echo URL::asset( $item->path ); ?>"/>
+			</a>
+	<?php elseif ($index%2 == 1): ?>
+			<a class='nextBtn' href='javascript:void(0);'>
+				<img src="<?php echo URL::asset( $item->path ); ?>"/>
+			</a>
+		</li>
+	<?php endif; ?>
+	<?php $index++; ?>
+<?php endforeach; ?>
+	</ul>
+</div>
+<?php $__env->stopSection(); ?>

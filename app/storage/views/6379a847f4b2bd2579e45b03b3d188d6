@@ -1,0 +1,20 @@
+<?php $__env->startSection('content'); ?>
+<div id='models'>
+	<ul id='grid' class='clearfix' data-columns>
+<?php foreach( $data as $item ): ?>
+		<li>
+			<a href="<?php echo $pageName; ?>/<?php echo $item->model->slug; ?>">
+				<div class='hover'>
+					<span class='valign'></span>
+					<p class='vcontent'><?php echo $item->model->name; ?></p>
+				</div>
+				<div class='img-container'>
+					<img src="<?php echo URL::asset( $item->cover->path ); ?>"/>
+				</div>
+				<p class='name'><?php echo $item->model->name; ?></p>
+			</a>
+		</li>
+<?php endforeach; ?>
+	</ul>
+</div>
+<?php $__env->stopSection(); ?>
